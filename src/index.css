@@ -1,3 +1,16 @@
+/*
+Dark Blue: #12232E
+
+Lighter Blue: #007CC7
+
+Lightest Blue: #4DA8DA
+
+Shadow of Dark Blue: #203647
+
+Shadow of Light Blue: #EEFBFB
+*/
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +23,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+
 }
