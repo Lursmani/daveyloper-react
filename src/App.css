@@ -1,9 +1,28 @@
+/*
+Dark Blue: #12232E
+
+Lighter Blue: #007CC7
+
+Lightest Blue: #4DA8DA
+
+Shadow of Dark Blue: #203647
+
+Shadow of Light Blue: #EEFBFB
+*/
+
 .App {
   text-align: center;
 }
-.main-container{
+.nav-offset {
+  height: 10vh;
+}
+.main-container {
   display: grid;
   grid-template-rows: repeat(3, minmax(auto, max-content));
   min-height: 100vh;
-  
+  background-color: #4da8da;
+}
+.main-body {
+  display: grid;
+  min-height: 80vh;
 }
