@@ -1,4 +1,7 @@
 .footer-div {
   background-color: #203647;
   height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
 }
