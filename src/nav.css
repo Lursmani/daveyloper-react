@@ -11,10 +11,9 @@ Shadow of Light Blue: #FeFFFF
 */
 
 .nav-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr 4fr;
-  grid-template-areas: "logo space nav";
-  justify-self: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #17252a;
   height: 10vh;
   position: fixed;
@@ -23,50 +22,61 @@ Shadow of Light Blue: #FeFFFF
 
 .nav-list {
   list-style: none;
-  grid-area: nav;
+  display: flex;
+  align-items: center;
+  padding-right: 2em;
+  transition: 0.5s ease;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
+  align-self: center;
+  padding: 0.67em 1em;
+  font-size: 1.5em;
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  background-color: #2b7a78;
 }
 
-/*######################################## BURGER MENU #####################################*/
-
-#burger-menu {
-  display: none;
+#logo-div {
+  display: grid;
+  height: 10vh;
+  grid-column: 1/6;
+  color: #c2e3fd;
 }
-
-.bm-burger-bars {
-  background-color: #c2e3fd;
+#logo-text {
+  align-self: center;
+  margin: 0;
+  padding-left: 1em;
 }
-.bm-burger-button {
-  position: fixed;
-  width: 6vh;
-  height: 6vh;
-  margin-left: 85%;
-  margin-top: 2vh;
-  padding: 0;
-}
-.bm-cross {
-  background-color: #9eb8cc;
-}
-.bm-cross-button {
-  position: static;
-}
-.bm-menu {
-  background: #203647;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-  box-shadow: -1px -3px 3px black;
-}
-.menu-item {
-  color: #9eb8cc;
-  font-family: "Karla", sans-serif;
+#logo-link {
+  text-decoration: none;
+  color: #c2e3fd;
 }
 
 @media only screen and (max-width: 768px) {
   .nav-list {
     display: none;
+  }
+  #logo-div {
+    grid-column: 1/12;
+  }
+  #logo-text {
+    padding-left: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nav-link {
+    font-size: 1.2em;
+    transition: 0.5s ease;
+    padding: 1em;
+  }
+  .nav-list {
+    padding-right: 0.9em;
+    transition: 0.5s ease;
   }
 }

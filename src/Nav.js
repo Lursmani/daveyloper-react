@@ -1,32 +1,32 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./nav.css"
-import { slide as Menu } from "react-burger-menu"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons' 
+import Hamburger from "./components/hamburger/hamburger"
+ 
 
 
-class Header extends React.Component {
-    showSettings (event) {
-        event.PreventDefault ();
-    }
-    
-    render () {
+function Header() {
+   
     return(
         
         <div className="nav-container">
+            
+            <div id="logo-div">
+                <h1 id="logo-text"><a id="logo-link" href="/"><FontAwesomeIcon icon={faCode} /> DaveyLoper</a></h1>
+            </div>
             <ul className="nav-list">
                 <Linkie to="/" text="Home" />
                 <Linkie to="/about" text="About" />
                 <Linkie to="/projects" text="Projects" />
                 <Linkie to="/contact" text="Contact" />
             </ul>
-            <Menu right width={ '70vw'}>
-                <a id="home" className="menu-item" href="/">Home</a>
-            </Menu>
         </div>
         
     )
     }
-}
+
 
 
 function Linkie(props) {
