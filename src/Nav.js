@@ -34,7 +34,7 @@ return(
     
     <Link to={props.to} style={{textDecoration: "none"}}>
         <li className="nav-link">
-            {props.text}
+            <div className="nav-link-div">{props.text}</div>
         </li>
     </Link>
     

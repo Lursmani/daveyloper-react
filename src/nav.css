@@ -30,12 +30,18 @@ Shadow of Light Blue: #FeFFFF
 
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: #d8e8f5;
   text-transform: uppercase;
   align-self: center;
-  padding: 0.67em 1em;
+  padding: 0 1em;
   font-size: 1.5em;
   transition: 0.5s ease;
+  overflow: hidden;
+}
+.nav-link-div {
+  height: 10vh;
+  display: grid;
+  align-items: center;
 }
 .nav-link:hover {
   background-color: #2b7a78;
@@ -54,7 +60,7 @@ Shadow of Light Blue: #FeFFFF
 }
 #logo-link {
   text-decoration: none;
-  color: #c2e3fd;
+  color: #d8e8f5;
 }
 
 @media only screen and (max-width: 768px) {
@@ -73,10 +79,15 @@ Shadow of Light Blue: #FeFFFF
   .nav-link {
     font-size: 1.2em;
     transition: 0.5s ease;
-    padding: 1em;
+    padding: 0 1em;
   }
   .nav-list {
     padding-right: 0.9em;
     transition: 0.5s ease;
+  }
+  .nav-link-div {
+    height: 10vh;
+    display: grid;
+    align-items: center;
   }
 }

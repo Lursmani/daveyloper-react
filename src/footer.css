@@ -1,8 +1,57 @@
 .footer-div {
   background-color: #203647;
-  height: 20vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   grid-row: 5/6;
+  font-style: "Klara" sans-serif;
+}
+#footer-name {
+  display: grid;
+}
+.footer-text-big {
+  color: #def2f1;
+  font-size: 1.5em;
+  align-self: center;
+  padding: 0 1em;
+}
+.footer-text {
+  color: #def2f1;
+}
+#footer-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 1em;
+}
+.contact-icon {
+  font-size: 4em;
+  padding: 0 0.4em;
+  color: #def2f1;
+  transition: 0.5s ease;
+
+}
+
+#contact-icon-1:hover, #contact-icon-2:hover, #contact-icon-3:hover {
+  background: #3aafa9;
+  margin-top: -0.2em;
+  overflow: hidden;
+  transition-delay: 0.2s;
+  transition: 0.5s ease;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #footer-contact {
+    margin: 0;
+    width: 100%;
+  }
+  #footer-name {
+    margin: 0;
+  }
+  .contact-icon {
+
+  }
 }
