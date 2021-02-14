@@ -35,7 +35,7 @@
 
 #contact-icon-1:hover, #contact-icon-2:hover, #contact-icon-3:hover {
   background: #3aafa9;
-  margin-top: -0.2em;
+  transform: translatex(-10px);
   overflow: hidden;
   transition-delay: 0.2s;
   transition: 0.5s ease;

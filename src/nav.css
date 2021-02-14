@@ -18,6 +18,7 @@ Shadow of Light Blue: #FeFFFF
   height: 10vh;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .nav-list {
