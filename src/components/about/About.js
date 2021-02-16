@@ -3,7 +3,6 @@ import myPicture from "./me.jpg"
 import "./about.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {Button} from "react-bootstrap"
 import {Link} from "react-scroll"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact, faHtml5, faCss3Alt, faSass, faBootstrap, faJsSquare} from "@fortawesome/free-brands-svg-icons"
