@@ -9,6 +9,13 @@ Shadow of Dark Blue: #DEF2F1
 
 Shadow of Light Blue: #FeFFFF
 */
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 .App {
   text-align: center;
@@ -16,6 +23,7 @@ Shadow of Light Blue: #FeFFFF
 .nav-offset {
   height: 10vh;
   grid-row: 1/2;
+  width: 100%;
 }
 .main-container {
   display: grid;

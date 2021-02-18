@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import myPicture from "./me.jpg"
 import "./about.css"
 import AOS from 'aos';
@@ -18,7 +18,9 @@ AOS.init({
 
 
 function About(props) {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div id="about-container">
             <div id="about-me-div">

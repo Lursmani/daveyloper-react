@@ -15,8 +15,8 @@ function Footer() {
 
             </div>
             <div id="footer-contact">
-                <a target= "_blank" className="contact-icon" id="contact-icon-1" href="https://www.linkedin.com/in/davit-lursmanashvili/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a target= "_blank" className="contact-icon" id="contact-icon-2" href="https://github.com/Lursmani"><FontAwesomeIcon icon={faGithubSquare} /> </a>
+                <a target= "_blank" className="contact-icon" rel="noreferrer" id="contact-icon-1" href="https://www.linkedin.com/in/davit-lursmanashvili/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a target= "_blank" className="contact-icon" rel="noreferrer" id="contact-icon-2" href="https://github.com/Lursmani"><FontAwesomeIcon icon={faGithubSquare} /> </a>
                 <a className="contact-icon" id="contact-icon-3" href="mailto: lursmanashvilidavit@gmail.com"><FontAwesomeIcon icon={faEnvelopeSquare} /></a>
             </div>
         </div>
