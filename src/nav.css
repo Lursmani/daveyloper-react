@@ -94,4 +94,7 @@ Shadow of Light Blue: #FeFFFF
     display: grid;
     align-items: center;
   }
+  .nav-container {
+    height: 15vh;
+  }
 }
