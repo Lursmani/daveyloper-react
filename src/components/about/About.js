@@ -156,7 +156,7 @@ function AboutLists() {
         <div className="skills-headline-div" data-aos="fade-left" data-aos-delay="100">
         <h2 className="skills-headline">
             (Human) Languages:
-        </h2> data-aos="fade-left"
+        </h2> 
         <ul className="skills-list" data-aos="fade-left" data-aos-delay="300">
             <li>English </li>
             <li>Dutch </li>
