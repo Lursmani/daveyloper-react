@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import React, {Suspense} from "react"
 import './App.css';
 import "./Loading.css"
-import {BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Header from "./Nav"
 import Footer from "./Footer"
 import Hamburger from "./components/hamburger/hamburger"
