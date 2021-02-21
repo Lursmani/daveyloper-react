@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react"
+import React, {useEffect} from "react"
 import BannerImage from "./banner-image.png" 
 import "./home.css"
-import { Link,  animateScroll as scroll, } from 'react-scroll'
+import { Link,  } from 'react-scroll'
 import { Icon, } from '@iconify/react';
 import chevronDown from '@iconify-icons/el/chevron-down';
 import AOS from 'aos';
