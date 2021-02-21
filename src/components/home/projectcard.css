@@ -3,6 +3,13 @@
   width: 100%;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: 1fr;
+  justify-self: center;
+  transition: 0.5s ease;
+
+}
+.project-card-div:hover {
+  transform: translateY(-10px);
+  transition: 0.5s ease;
 }
 .project-img {
   width: 100%;

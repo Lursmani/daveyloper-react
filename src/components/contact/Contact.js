@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect}from "react"
 import "./contact.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLinkedin, faGithubSquare} from "@fortawesome/free-brands-svg-icons"
@@ -7,6 +7,9 @@ import {faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons"
 
 
 function Contact(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <div id="contact-container">

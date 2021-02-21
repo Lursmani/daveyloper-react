@@ -142,22 +142,22 @@ function AboutLists() {
     return (
         <div id="lists-div">
 
-        <div className="skills-headline-div">
+        <div className="skills-headline-div" data-aos="fade-right">
         <h2 className="skills-headline">
             Tools that I use:
         </h2> 
-        <ul className="skills-list">
+        <ul className="skills-list" data-aos="fade-right" data-aos-delay="200">
             <li>VSCode</li>
             <li>Github</li>
             <li>NPM</li>
             <li>Photoshop</li>
         </ul>
         </div>
-        <div className="skills-headline-div">
+        <div className="skills-headline-div" data-aos="fade-left" data-aos-delay="100">
         <h2 className="skills-headline">
             (Human) Languages:
-        </h2> 
-        <ul className="skills-list">
+        </h2> data-aos="fade-left"
+        <ul className="skills-list" data-aos="fade-left" data-aos-delay="300">
             <li>English </li>
             <li>Dutch </li>
             <li>Russian </li>

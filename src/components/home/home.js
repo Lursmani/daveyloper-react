@@ -55,15 +55,15 @@ function Home() {
             description="Coming Soon"
             />
             </div>
-            <div className="end-links-div" data-aos="fade-up" data-aos-delay="200" >
+            <div className="end-links-div" data-aos="flip-up" data-aos-delay="200" >
             <a className="end-links" href="/projects"  >
-                 <div className="end-link-projects" data-aos="fade-up" data-aos-delay="400">
+                 <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400">
                     <h1>Click here to see more of my projects</h1>
                 </div>
                 </a>
                 <hr id="end-link-br"/>
                 <a className="end-links" href="/contact" >  
-                 <div className="end-link-contact" data-aos="fade-up" data-aos-delay="600">
+                 <div className="end-link-contact" data-aos="flip-right" data-aos-delay="600">
                 <h1>Click here to contact me directly </h1> 
                 </div>
                 </a>
