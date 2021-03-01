@@ -39,6 +39,21 @@ function Projects(props) {
                 <h1 className="projects-title">My Projects:</h1>
                 <h2 className="projects-subtitle">While this website itself is one of my projects, below you can see other projects that I have worked on.</h2>
             </div>
+            <ProjectCarousel
+                title="React Projects"
+                description="These are some projects that I worked on to get familiar with React"
+            >
+                <MainProjectCard
+                image={"shorturl.at/nEOX6"}
+                destination="/quotegenerator"
+                linkText="Random Quote Generator"
+                description="A random quote Generator that displays quotes from an API"
+                >
+
+                </MainProjectCard>
+
+            </ProjectCarousel>
+
             <ProjectCarousel  
             title="FreeCodeCamp projects"
             description="These are the first projects I did while I was learning HTML and CSS. Everybody has to start somewhere, right?">

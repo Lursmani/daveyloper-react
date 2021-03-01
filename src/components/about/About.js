@@ -151,6 +151,7 @@ function AboutLists() {
             <li>Github</li>
             <li>NPM</li>
             <li>Photoshop</li>
+            <li>Figma</li>
         </ul>
         </div>
         <div className="skills-headline-div" data-aos="fade-left" data-aos-delay="100">

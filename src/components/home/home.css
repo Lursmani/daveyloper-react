@@ -42,14 +42,14 @@ whiterish: #FeFFFF
 .banner-text {
   color: #def2f1;
   text-shadow: 1px 1px 3px #000000;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 #banner-link {
   border: none;
   background: #2b7a78;
   padding: 1em 2em;
   color: #def2f1;
-  font-size: 2em;
+  font-size: 1.5em;
   border-radius: 5px;
   text-shadow: 2px 2px 3px black;
   cursor: pointer;

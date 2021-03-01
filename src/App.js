@@ -9,6 +9,7 @@ const Contact = React.lazy(() => import ("./components/contact/Contact") )
 const Projects = React.lazy (() => import ("./components/projects/Projects") )
 const About = React.lazy(() => import ("./components/about/About") )
 const Home = React.lazy(() => import  ("./components/home/home"));
+const QuoteGenerator = React.lazy(() => import ("./components/works/quote-generator/quote-generator"))
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/about" component={About} />
       <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
+      <Route path="/quotegenerator" component={QuoteGenerator} />
       </Switch>
       </Suspense>
       </div>

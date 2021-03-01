@@ -1,0 +1,34 @@
+#quote-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#quote-box {
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    width: 70%;
+}
+#text{
+    padding: 1em;
+    justify-self: center;
+}
+#author {
+    padding: 1em;
+    justify-self: center;
+}
+#new-quote-button {
+    padding: 1em;
+    margin: 1em 0;
+    justify-self: center;
+    border: none;
+    background: #17252A;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease;
+    font-size: 1.1em;
+}
+#new-quote-button:hover {
+    background:#2b7a78;
+    transition: 0.5s ease;
+}
