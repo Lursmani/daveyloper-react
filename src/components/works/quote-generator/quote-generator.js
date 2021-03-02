@@ -42,7 +42,7 @@ function QuoteGenerator() {
         
         console.log(chosenQuote)
         const ShareableText = `${text} - ${author}`
-        const TweetLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent({ShareableText})}`
+        const TweetLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(ShareableText)}`
       
 // NEED TO CALL AN ITEM WITHIN THIS OBJECT
     return (
