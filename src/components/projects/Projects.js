@@ -8,6 +8,7 @@ import TributePage from "./images/tribute-page.png"
 import LandingPage from "./images/landingpage.png"
 import TechDoc from "./images/techdoc.png"
 import SurveyForm from "./images/surveyform.png"
+import QuoteGenerator from "./images/quoteGenerator.PNG"
 
 
 const responsive = {
@@ -44,10 +45,10 @@ function Projects(props) {
                 description="These are some projects that I worked on to get familiar with React"
             >
                 <MainProjectCard
-                image={"shorturl.at/nEOX6"}
+                image={QuoteGenerator}
                 destination="/quotegenerator"
                 linkText="Random Quote Generator"
-                description="A random quote Generator that displays quotes from an API"
+                description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
                 >
 
                 </MainProjectCard>
