@@ -10,6 +10,7 @@ const Projects = React.lazy (() => import ("./components/projects/Projects") )
 const About = React.lazy(() => import ("./components/about/About") )
 const Home = React.lazy(() => import  ("./components/home/home"));
 const QuoteGenerator = React.lazy(() => import ("./components/works/quote-generator/quote-generator"))
+const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownPreviewer/markdownpreviewer"))
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
       <Route path="/quotegenerator" component={QuoteGenerator} />
+      <Route path="/markdownpreviewer" component={MarkdownPreviewer} />
       </Switch>
       </Suspense>
       </div>

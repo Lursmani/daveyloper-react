@@ -49,9 +49,13 @@ function Projects(props) {
                 destination="/quotegenerator"
                 linkText="Random Quote Generator"
                 description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
-                >
-
-                </MainProjectCard>
+                />
+                <MainProjectCard
+                image={QuoteGenerator}
+                destination="/markdownpreviewer"
+                linkText="Markdown Previewer"
+                description="An app that lets you preview entered text as valid HTML    "
+                />  
 
             </ProjectCarousel>
 
