@@ -9,6 +9,7 @@ import LandingPage from "./images/landingpage.png"
 import TechDoc from "./images/techdoc.png"
 import SurveyForm from "./images/surveyform.png"
 import QuoteGenerator from "./images/quoteGenerator.PNG"
+import MarkdownPreviewer from "./images/MarkdownPreviewer.png"
 
 
 const responsive = {
@@ -46,15 +47,21 @@ function Projects(props) {
             >
                 <MainProjectCard
                 image={QuoteGenerator}
-                destination="/quotegenerator"
+                destination="/quotegenerator.html"
                 linkText="Random Quote Generator"
                 description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
                 />
                 <MainProjectCard
-                image={QuoteGenerator}
-                destination="/markdownpreviewer"
+                image={MarkdownPreviewer}
+                destination="/markdownpreviewer.html"
                 linkText="Markdown Previewer"
-                description="An app that lets you preview entered text as valid HTML    "
+                description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
+                />  
+                 <MainProjectCard
+                image={MarkdownPreviewer}
+                destination="/drumpad"
+                linkText="Drum Pad"
+                description="A drumpad that plays different audio files when you press different buttons."
                 />  
 
             </ProjectCarousel>

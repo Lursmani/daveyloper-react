@@ -11,6 +11,7 @@ const About = React.lazy(() => import ("./components/about/About") )
 const Home = React.lazy(() => import  ("./components/home/home"));
 const QuoteGenerator = React.lazy(() => import ("./components/works/quote-generator/quote-generator"))
 const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownPreviewer/markdownpreviewer"))
+const DrumPad = React.lazy(() => import ("./components/works/dumpPad/drumPad"))
 
 
 
@@ -25,12 +26,13 @@ function App() {
       <div className="main-body">
       <Suspense fallback={<Loading/>}>
       <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/quotegenerator" component={QuoteGenerator} />
-      <Route path="/markdownpreviewer" component={MarkdownPreviewer} />
+      <Route exact path="/index.html" component={Home} />
+      <Route path="/about.html" component={About} />
+      <Route path="/projects.html" component={Projects} />
+      <Route path="/contact.html" component={Contact} />
+      <Route path="/quotegenerator.html" component={QuoteGenerator} />
+      <Route path="/markdownpreviewer.html" component={MarkdownPreviewer} />
+      <Route path="/drumpad.html" component={DrumPad} />
       </Switch>
       </Suspense>
       </div>
