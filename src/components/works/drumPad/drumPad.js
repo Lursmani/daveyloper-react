@@ -72,18 +72,29 @@ function DrumPad() {
       let volumeNum = volume*100
       const [powerOn, setPowerOn] = useState(true)
       const [text, setText] = useState("");
-      let audio0 = new Audio(drumBank[0].url)
-      let audio1 = new Audio(drumBank[1].url)
-      let audio2 = new Audio(drumBank[2].url)
-      let audio3 = new Audio(drumBank[3].url)
-      let audio4 = new Audio(drumBank[4].url)
-      let audio5 = new Audio(drumBank[5].url)
-      let audio6 = new Audio(drumBank[6].url)
-      let audio7 = new Audio(drumBank[7].url)
-      let audio8 = new Audio(drumBank[8].url)
-      audio0.volume = audio1.volume = audio2.volume = audio3.volume = audio4.volume = audio5.volume = 
+      let audio0 = () => {sound0()}
+      let audio1 = () => {sound1()}
+      let audio2 = () => {sound2()}
+      let audio3 = () => {sound3()}
+      let audio4 = () => {sound4()}
+      let audio5 = () => {sound5()}
+      let audio6 = () => {sound6()}
+      let audio7 = () => {sound7()}
+      let audio8 = () => {sound8()}
+      let [sound0] = useSound(drumBank[0].url, {volume: volume} )
+      let [sound1] = useSound(drumBank[0].url, {volume: volume} ) 
+      let [sound2] = useSound(drumBank[0].url, {volume: volume} ) 
+      let [sound3] = useSound(drumBank[0].url, {volume: volume} ) 
+      let [sound4] = useSound(drumBank[0].url, {volume: volume} )
+      let [sound5] = useSound(drumBank[0].url, {volume: volume} )
+      let [sound6] = useSound(drumBank[0].url, {volume: volume} )
+      let [sound7] = useSound(drumBank[0].url, {volume: volume} )
+      let [sound8] = useSound(drumBank[0].url, {volume: volume} )
+      
+      sound0.volume = audio1.volume = audio2.volume = audio3.volume = audio4.volume = audio5.volume = 
       audio6.volume = audio7.volume = audio8.volume = volume
-  
+      
+      
      
 
     useKeyPress(["q", "w", "e", "a", "s", "d", "z", "x", "c"], (event) => {
@@ -116,28 +127,29 @@ function DrumPad() {
       } 
     })
      
+    
 
    function playThis(num) {
   if (powerOn === true) 
          { setText(drumBank[num].id)
           switch(num) {
-          case 0: audio0.play()
+          case 0: audio0()
           break;
-          case 1: audio1.play()
+          case 1: audio1()
           break;
-          case 2: audio2.play()
+          case 2: audio2()
           break;
-          case 3: audio3.play()
+          case 3: audio3()
           break;
-          case 4: audio4.play()
+          case 4: audio4()
           break;
-          case 5: audio5.play()
+          case 5: audio5()
           break;
-          case 6: audio6.play()
+          case 6: audio6()
           break;
-          case 7: audio7.play()
+          case 7: audio7()
           break;
-          case 8: audio8.play()
+          case 8: audio8()
           break;
         }
       }

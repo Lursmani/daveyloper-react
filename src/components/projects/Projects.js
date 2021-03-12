@@ -62,7 +62,7 @@ function Projects(props) {
                 image={Drumpad}
                 destination="/drumpad.html"
                 linkText="Drum Pad"
-                description="A drumpad that plays different audio files when you press different buttons. Plan to upgrade it in the future."
+                description="A drumpad that plays different audio files when you press different buttons."
                 />  
 
             </ProjectCarousel>
