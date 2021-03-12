@@ -10,6 +10,7 @@ import TechDoc from "./images/techdoc.png"
 import SurveyForm from "./images/surveyform.png"
 import QuoteGenerator from "./images/quoteGenerator.PNG"
 import MarkdownPreviewer from "./images/MarkdownPreviewer.png"
+import Drumpad from "./images/drumpad.PNG"
 
 
 const responsive = {
@@ -58,10 +59,10 @@ function Projects(props) {
                 description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
                 />  
                  <MainProjectCard
-                image={MarkdownPreviewer}
+                image={Drumpad}
                 destination="/drumpad.html"
                 linkText="Drum Pad"
-                description="A drumpad that plays different audio files when you press different buttons."
+                description="A drumpad that plays different audio files when you press different buttons. Plan to upgrade it in the future."
                 />  
 
             </ProjectCarousel>
