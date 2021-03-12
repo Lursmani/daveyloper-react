@@ -91,8 +91,6 @@ function DrumPad() {
       let [sound7] = useSound(drumBank[0].url, {volume: volume} )
       let [sound8] = useSound(drumBank[0].url, {volume: volume} )
       
-      sound0.volume = audio1.volume = audio2.volume = audio3.volume = audio4.volume = audio5.volume = 
-      audio6.volume = audio7.volume = audio8.volume = volume
       
       
      
