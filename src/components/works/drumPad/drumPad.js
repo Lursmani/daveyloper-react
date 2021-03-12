@@ -12,7 +12,7 @@ import Heater6 from './Heater-6.mp3'
 import Heater4 from './Heater-4_1.mp3'
 import useKeyPress from "react-use-keypress"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faVolumeUp} from "@fortawesome/free-solid-svg-icons"
+import {faVolumeOff} from "@fortawesome/free-solid-svg-icons"
 
 
 function DrumPad() {
@@ -158,7 +158,7 @@ function DrumPad() {
                 <p className="drumpad-text">{text}</p>
             </div>
             <div id="drum-volume-div">
-            <h3 id="drum-volume-value"><FontAwesomeIcon icon={faVolumeUp} />  {volumeNum}</h3>
+            <h3 id="drum-volume-value"><FontAwesomeIcon icon={faVolumeOff} />  {volumeNum}</h3>
               <input 
               id="drum-volume-bar"
               type="range"

@@ -13,11 +13,12 @@
 }
 
 .drumpad-display {
-    grid-row: 3/6;
+    grid-row: 2/6;
     grid-column: 5/13;
     background: #39796b;
     font-size: 2em;
     display: grid;
+    margin: 1em 0 0.5em 0;
 }
 .drumpad-text {
     align-self: center;
@@ -32,6 +33,9 @@
     background: #39796b;
     border: none;
     border-radius: 3px;
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 .drum-pad:hover {
     background: #75ccb9;
@@ -95,7 +99,7 @@
 #drum-power-button-off {
     border-radius: 50%;
     height: 4vh;
-    background: black;
+    background: #00251a;
     width: 4vh;
     grid-column: 1/2;
     justify-self: left;
@@ -104,7 +108,7 @@
 #drum-power-button-on {
     border-radius: 50%;
     height: 4vh;
-    background: black;
+    background: #02a876;
     width: 4vh;
     grid-column: 3/4;
     justify-self: right;
@@ -116,12 +120,13 @@
     display: grid;
     grid-row: 6/7;
     grid-column: 5/13;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 5fr 8fr;
     color: white;
 }
 #drum-volume-value {
     grid-column: 1/2;
     width: 100%;
+    
 }
 #drum-volume-bar {
     grid-column: 2/3;
@@ -136,14 +141,22 @@
 
 @media only screen and (max-width: 768px) {
     .drumpad-container {
-        grid-template-columns: repeat(6. 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(12, auto);
         width: 95%;
-        height: 80vh;
+        min-height: 80vh;
+        max-height: 100vh;
+        max-width: 100vw;
+        padding: 2.5%;
+    }
+    .drum-pad {
+        width: 29vw;
+        justify-self: center;
     }
     .drumpad-display {
         grid-row: 8/13;
         grid-column: 1/6;
+        margin: 0;
     }
     #drum-power-div {
         grid-row: 7/8;
@@ -156,15 +169,29 @@
         grid-row: 7/8;
         grid-column: 2/3;
         margin:0 0 0.5rem 0;
-        font-size: 1.5em;
-
+        font-size: 1.3em;
+        justify-self: right;
+        margin-right: 0.5em;
 
     }
     #drum-power-text-on {
         grid-row: 7/8;
         grid-column: 2/3;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin:0 0 0.5rem 0;
-
+        margin-left: 0.8em;
+        justify-self: right;
+        margin-right: 0.5em;
+    }
+    #drum-volume-div {
+        display: grid;
+        grid-row: 7/8;
+        grid-column: 1/2;
+        
+        font-size: 0.8em;
+    }
+    #drum-volume-bar {
+        margin-left: 0.1em;
+        width: 120%;
     }
 }

@@ -11,7 +11,7 @@ const About = React.lazy(() => import ("./components/about/About") )
 const Home = React.lazy(() => import  ("./components/home/home"));
 const QuoteGenerator = React.lazy(() => import ("./components/works/quote-generator/quote-generator"))
 const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownPreviewer/markdownpreviewer"))
-const DrumPad = React.lazy(() => import ("./components/works/dumpPad/drumPad"))
+const DrumPad = React.lazy(() => import ("./components/works/drumPad/drumPad"))
 
 
 
