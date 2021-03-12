@@ -26,7 +26,7 @@ function App() {
       <div className="main-body">
       <Suspense fallback={<Loading/>}>
       <Switch>
-      <Route exact path="/index.html" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/about.html" component={About} />
       <Route path="/projects.html" component={Projects} />
       <Route path="/contact.html" component={Contact} />

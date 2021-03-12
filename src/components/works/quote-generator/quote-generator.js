@@ -24,17 +24,16 @@ function QuoteGenerator() {
     const [author, setAuthor] = useState("Loading...")
     const [chosenQuote, setChosenQuote] = useState({})
     
-    function randomNumber() {return Math.floor(Math.random() * 102)} //CNAHGE THIS SO THAT ITS * ALLQUOTES.LENGTH 
-
+    function randomNumber() {return Math.floor(Math.random() * allQuotes.length)} //CNAHGE THIS SO THAT ITS * ALLQUOTES.LENGTH 
     
   
     
     function handleClick() {
+        let number = randomNumber()
 
-        setQuoteIndex(randomNumber());
-        setChosenQuote(allQuotes[quoteIndex])
-        setText(allQuotes[quoteIndex].quote);
-        setAuthor(allQuotes[quoteIndex].author);
+        setChosenQuote(allQuotes[number])
+        setText(allQuotes[number].quote);
+        setAuthor(allQuotes[number].author);
         console.log(allQuotes.length)
         
     } 

@@ -17,7 +17,7 @@ function Header() {
                 <h1 id="logo-text"><a id="logo-link" href="/"><FontAwesomeIcon icon={faCode} /> DaveyLoper</a></h1>
             </div>
             <ul className="nav-list">
-                <Linkie to="/index.html" text="Home" />
+                <Linkie to="/" text="Home" />
                 <Linkie to="/about.html" text="About" />
                 <Linkie to="/projects.html" text="Projects" />
                 <Linkie to="/contact.html" text="Contact" />

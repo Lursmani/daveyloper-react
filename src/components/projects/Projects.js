@@ -59,7 +59,7 @@ function Projects(props) {
                 />  
                  <MainProjectCard
                 image={MarkdownPreviewer}
-                destination="/drumpad"
+                destination="/drumpad.html"
                 linkText="Drum Pad"
                 description="A drumpad that plays different audio files when you press different buttons."
                 />  
