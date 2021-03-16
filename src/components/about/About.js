@@ -112,7 +112,7 @@ function Skills() {
                    <AboutLists/>
 
                 </div>
-               <a href="/projects" id="projects-link"> <button id="projects-button">My Projects</button> </a>
+               <div id="projects-button-div"><a href="/projects.html" id="projects-button"> <h3 id="projects-button-text">My Projects</h3> </a> </div>
             </div>
 
 

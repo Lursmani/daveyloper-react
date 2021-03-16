@@ -33,9 +33,9 @@ function Home() {
                 <img src={BannerImage} alt="" id="banner-image" />
             </div>
             <div id="scroll-title-div">
-                <h1 id="scroll-title">
+                <h2 id="scroll-title">
                     Check out some of my projects below:
-                </h1>
+                </h2>
             </div>
             <div className="scroll-container">
             <ProjectCard 
@@ -57,18 +57,26 @@ function Home() {
             description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
             />
             </div>
+
+
             <div className="end-links-div" data-aos="flip-up" data-aos-delay="200" >
-            <a className="end-links" href="/projects"  >
-                 <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400">
-                    <h1>Click here to see more of my projects</h1>
-                </div>
-                </a>
-                <hr id="end-link-br"/>
-                <a className="end-links" href="/contact" >  
+            
+            
+            <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400">
+            <a className="end-links" href="/projects.html"  >
+                    <h2 className="end-links-text">Click here to see more of my projects</h2>
+                    </a>
+                    </div>
+                     
+           
+                
+                
                  <div className="end-link-contact" data-aos="flip-right" data-aos-delay="600">
-                <h1>Click here to contact me directly </h1> 
+                 <a className="end-links" href="/contact.html" > 
+                <h2 className="end-links-text">Click here to contact me directly </h2>
+                   </a>
                 </div>
-                </a>
+               
             </div>
         </div>
     )

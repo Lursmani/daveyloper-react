@@ -15,16 +15,23 @@ function Contact(props) {
         <div id="contact-container">
             <div className="contacts-div">
                 <div id="contact-linkedin">
-                <a target= "_blank" rel="noreferrer" className="contact-text"  href="https://www.linkedin.com/in/davit-lursmanashvili/"> <h1 className="contact-text" >Find me on <FontAwesomeIcon icon={faLinkedin} className="contact-page-icon" /></h1></a>
+                <a target= "_blank" rel="noreferrer" className="contact-link"  href="https://www.linkedin.com/in/davit-lursmanashvili/"> 
+                <h2 className="contact-text" >Find me on LinkedIn <FontAwesomeIcon icon={faLinkedin} className="contact-page-icon" /> </h2></a>
                 </div>
-                <hr id="vertical-line"/>
+
+                <hr id="contact-line-1"/>
+
                 <div id="contact-github">
-                <a target= "_blank" rel="noreferrer" className="contact-text"  href="https://github.com/Lursmani" >   <h1 className="contact-text"> Take a look at my repos on <FontAwesomeIcon icon={faGithubSquare} className="contact-page-icon" /> </h1> </a>
+                <a target= "_blank" rel="noreferrer" className="contact-link"  href="https://github.com/Lursmani" >  
+                <h2 className="contact-text"> Take a look at my repos on <FontAwesomeIcon icon={faGithubSquare} className="contact-page-icon" /> </h2> </a>
                 </div>
+
+                <hr id="contact-line-2" />
+
                 <div id="contact-email">
-                   <a className="contact-text" href="mailto:lursmanashvilidavit@gmail.com"> <h1 className="contact-text"> If you have a direct inquiry, you can send me an <FontAwesomeIcon icon={faEnvelopeSquare} className="contact-page-icon" /> </h1> </a>
+                   <a className="contact-link" href="mailto:lursmanashvilidavit@gmail.com">
+                   <h2 className="contact-text"> If you have a direct inquiry, you can send me an <FontAwesomeIcon icon={faEnvelopeSquare} className="contact-page-icon" /> </h2> </a>
                 </div>
-                <hr id="horizontal-line" />
                 <div id="contact-cv">
 
                 </div>

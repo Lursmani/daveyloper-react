@@ -19,9 +19,9 @@ class Hamburger extends React.Component {
       <div id="hamburger-div">
   <Menu right width={ '70vw'}>
      <a id="home" className="menu-item" href="/">Home <FontAwesomeIcon icon={faHome} fixedWidth /></a>
-     <a id="about" className="menu-item" href="/about">About <FontAwesomeIcon icon={faAddressCard} fixedWidth /></a>
-     <a id="projects" className="menu-item" href="/projects">Projects <FontAwesomeIcon icon={faLaptopCode} fixedWidth /></a>
-     <a id="contact" className="menu-item" href="/contact">Contact <FontAwesomeIcon icon={faEnvelopeOpen} fixedWidth /></a>
+     <a id="about" className="menu-item" href="/about.html">About <FontAwesomeIcon icon={faAddressCard} fixedWidth /></a>
+     <a id="projects" className="menu-item" href="/projects.html">Projects <FontAwesomeIcon icon={faLaptopCode} fixedWidth /></a>
+     <a id="contact" className="menu-item" href="/contact.html">Contact <FontAwesomeIcon icon={faEnvelopeOpen} fixedWidth /></a>
 </Menu>
     </div>
 )

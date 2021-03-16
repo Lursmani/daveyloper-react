@@ -16,17 +16,18 @@ function ProjectCard(props) {
     function handleMouseLeave() {
         setHovered(false)
     }
-
+    const projectLinkClass = hover ? "project-link-hover" : "project-link"
     const buttonClass = hover ? "link-button-hover" : "link-button-nohover"
     const overlayClass = hover ? "project-description-div-in" : "project-description-div-out" //this is supposed to animate on hoevr-out, but doesn't
 
     return (
             <div className="project-card-div" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseLeave}>
                 <img src={props.image} alt={props.imageDescription} className="project-img" />
-                <a href={props.destination} className="project-link">
-                    <button className={buttonClass} >{props.linkText}</button>
+                <div className={projectLinkClass}>
+                <a href={props.destination} className={buttonClass} >
+                    <h2  className="button-text" >{props.linkText}</h2>
                 </a>
-
+                </div>
                 {/* This activates the overlay on hover. 
                  I want to make this part disappear after hoevrv-out animation is done. Will look up later */}
                 {hover && (
