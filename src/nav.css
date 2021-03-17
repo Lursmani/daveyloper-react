@@ -58,15 +58,31 @@
 }
 
 @media only screen and (max-width: 768px) {
- 
+  .nav-container {
+    height: 11vh;
+  }
+
+  #logo-div {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: grid;
+    grid-column: 1/12;
+  }
   .nav-list {
     display: none;
   }
-  #logo-div {
-    grid-column: 1/12;
-  }
   #logo-text {
     padding-left: 0.5em;
+    margin: 0;
+    align-self: top;
+    height: 100%;
+    display: grid;
+  }
+  #logo-link {
+    font-size: 0.8em;
+    height: 100%;
+    align-self: top;
   }
 }
 
@@ -85,7 +101,6 @@
     display: grid;
     align-items: center;
   }
-  .nav-container {
-    height: 15vh;
-  }
+ 
 }
+

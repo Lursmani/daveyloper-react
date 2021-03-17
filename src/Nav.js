@@ -18,7 +18,6 @@ function Header() {
             </div>
             <ul className="nav-list">
                 <Linkie to="/" text="Home" />
-                <Linkie to="/about" text="About" />
                 <Linkie to="/projects" text="Projects" />
                 <Linkie to="/contact" text="Contact" />
             </ul>

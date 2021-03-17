@@ -11,6 +11,7 @@ import ProjectCard from "./projectcard"
 import Drumpad from "../projects/images/drumpad.PNG"
 import QuoteGenerator from "../projects/images/quoteGenerator.PNG"
 import MarkdownPreviewer from "../projects/images/MarkdownPreviewer.png"
+import About from "../about/About"
 
 
 AOS.init(
@@ -29,9 +30,9 @@ function Home() {
 
         <div className="home-container">
              <Helmet>
-            <title>Davit Lursmanashvili (Daveyloper): Front-end Developer - Landing Page</title>
-            <meta name="description" content="Davit Lursmanashvili. I am a front-end developer. I build responsive, optimized websites using 
-            React, HTML, and CSS." />
+            <title>Davit Lursmanashvili (Daveyloper) - Front-end Developer - Landing Page</title>
+            <meta name="description" content="I am Davit Lursmanashvili, web developer and a front-end developer. I build responsive, optimized websites using 
+            React, HTML, and CSS. Learn about me and my experience here." />
           </Helmet>
             <div className="banner-container">
                 <div id="banner-text-div">
@@ -75,22 +76,8 @@ function Home() {
             </div>
 
 
-            <div className="end-links-div" data-aos="flip-up" data-aos-delay="200" >
-            
-            
-            <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400"    >
-            <a className="end-links" href="/projects"  >
-                    <h2 className="end-links-text">Take a look at more of my projects</h2>
-                    </a>
-                    </div>
-                    
-                 <div className="end-link-contact" data-aos="flip-right" data-aos-delay="600">
-                 <a className="end-links" href="/contact" > 
-                <h2 className="end-links-text">Contact me directly </h2>
-                   </a>
-                </div>
-               
-            </div>
+
+            <About/>
         </div>
     )
 }

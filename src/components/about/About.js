@@ -24,37 +24,38 @@ function About(props) {
       }, [])
     return (
         <div id="about-container">
-            <Helmet>
-                <title>About me - Davit Lursmanashvili (Daveyloper)</title>
-                <meta name="description" content="Learn more about what tools, frameworks, and technologies I use. Also my education, " />
-            </Helmet>
+
 
             <div id="about-me-div">
-                <img id="about-me-img" src={myPicture} alt="Me, Davit Lursmanashvili"/>
-                <div data-aos="fade-up" id="about-me-text-div">
-                    <h1 data-aos="fade-right" data-aos-delay="500" className="about-me-text" id="about-me-headline">I am Davit Lursmanashvili</h1>
-                    <h2 data-aos="fade-right" data-aos-delay="700" className="about-me-text">Front-end developer, social scientist, researcher.</h2>
+                <img id="about-me-img" src={myPicture} alt="Me, Davit Lursmanashvili" data-aos="flip-right" data-aos-delay="150"/>
+               {/* <div data-aos="fade-up" id="about-me-text-div">
+                    <h2 data-aos="fade-right"  className="about-me-text" id="about-me-headline">Front-end developer, social scientist, researcher.</h2>
+                    <h2 data-aos="fade-right" data-aos-delay="700" className="about-me-text"></h2>
                     <h3 data-aos="fade-right" data-aos-delay="900" className="about-me-text">I build fast, responsive websites with React.</h3>
+ 
                     <Link data-aos="fade-right" data-aos-delay="1100" to="about-skills-div" offset={-50} smooth={true} id="about-me-link"><button id="about-me-link-button">My Skills and Experience</button></Link>
                 </div>
-            </div>
-
-            <div id="about-story-div">
-                <div id="about-story-text-div">
-                    <h1 className="about-story-text">
-                       I am front-end developer with a passion for perfection
+                   */}
+                               <div id="about-story-div">
+                <section id="about-story-text-div">
+                    <h1 className="about-story-text" data-aos-delay="300" data-aos="fade-right">
+                       I am a front-end developer with a passion for perfection
                     </h1>
-                    <p className="about-story-text about-story-p">
+                    <p className="about-story-text about-story-p" data-aos-delay="500" data-aos="fade-right">
+                    I became a developer in 2020, when the whole world was upside down. Since then I have been 
+                     constantly advancing my skills and portfolio as a front-end developer. 
+                    </p>
+                    <p className="about-story-text about-story-p" data-aos-delay="700" data-aos="fade-right">
                     I focus on creating responsive, fast websites with interactive elements and good accessibility. 
-                    I use React, CSS, HTML and other supporting technology to deliver the best results. 
+                    I use React, CSS, HTML and other supporting technology to deliver excellent products.  
                         
                     </p>
-                    <p className="about-story-text about-story-p">
-                    I became a developer in 2020, when the whole world was upside down. Since then I have been 
-                    constantly advancing my skills and portfolio as a front-end developer.
-                    </p>
-                </div>
+
+                </section>
             </div>
+            </div>
+
+
 
             <Skills />
         </div>
@@ -65,7 +66,7 @@ function About(props) {
 function Skills() {
 
     return (
-        <div id="about-skills-div">
+        <section id="about-skills-div">
                 <div id="languages-div">
                    <div className="languages-headline-div"> <h1 className="languages-headline">
                         Development languages and frameworks:
@@ -119,9 +120,24 @@ function Skills() {
 
                    <AboutLists/>
 
+            <div className="end-links-div" data-aos="flip-up" data-aos-delay="200" >
+            
+            
+            <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400"    >
+            <a className="end-links" href="/projects"  >
+                    <h2 className="end-links-text">My projects</h2>
+                    </a>
+                    </div>
+                    
+                 <div className="end-link-contact" data-aos="flip-right" data-aos-delay="600">
+                 <a className="end-links" href="/contact" > 
+                <h2 className="end-links-text">Contact me directly </h2>
+                   </a>
                 </div>
-               <div id="projects-button-div"><a href="/projects" id="projects-button"> <h3 id="projects-button-text">My Projects</h3> </a> </div>
+               
             </div>
+            </div>
+            </section>
 
 
 
