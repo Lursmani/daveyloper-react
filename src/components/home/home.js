@@ -6,6 +6,7 @@ import { Icon, } from '@iconify/react';
 import chevronDown from '@iconify-icons/el/chevron-down';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Helmet} from "react-helmet"
 import ProjectCard from "./projectcard"
 import Drumpad from "../projects/images/drumpad.PNG"
 import QuoteGenerator from "../projects/images/quoteGenerator.PNG"
@@ -13,7 +14,9 @@ import MarkdownPreviewer from "../projects/images/MarkdownPreviewer.png"
 
 
 AOS.init(
-
+    {
+        once:true
+    }
 );
 
 function Home() {
@@ -22,7 +25,14 @@ function Home() {
       }, [])
 
     return (
+       
+
         <div className="home-container">
+             <Helmet>
+            <title>Davit Lursmanashvili (Daveyloper) - Front-end Developer - Landing Page</title>
+            <meta name="description" content="I am Davit, a front-end developer. I build responsive, optimized websites using 
+            React, HTML, and CSS." />
+          </Helmet>
             <div className="banner-container">
                 <div id="banner-text-div">
                     <h1 data-aos="fade-right" data-aos-delay="150" className="banner-text">I am Davit Lursmanashvili, a front-end developer</h1>
@@ -32,43 +42,54 @@ function Home() {
                 </div>
                 <img src={BannerImage} alt="" id="banner-image" />
             </div>
-            <div id="scroll-title-div">
-                <h1 id="scroll-title">
+            <div id="scroll-title-div" data-aos="flip-up">
+                <h2 id="scroll-title">
                     Check out some of my projects below:
-                </h1>
+                </h2>
             </div>
             <div className="scroll-container">
             <ProjectCard 
+            animation="fade-up"
+            animationDelay="200"
             image={QuoteGenerator}
-            destination="/quotegenerator.html"
+            destination="/quotegenerator"
             linkText="Random Quote Generator"
             description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
             />
              <ProjectCard 
+             animation="fade-up"
+             animationDelay="400"
              image={Drumpad}
-             destination="/drumpad.html"
+             destination="/drumpad"
              linkText="Drum Pad"
              description="A drumpad that plays different audio files when you press different buttons."
             />
              <ProjectCard 
+             animation="fade-up"
+             animationDelay="600"
             image={MarkdownPreviewer}
-            destination="/markdownpreviewer.html"
+            destination="/markdownpreviewer"
             linkText="Markdown Previewer"
             description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
             />
             </div>
+
+
             <div className="end-links-div" data-aos="flip-up" data-aos-delay="200" >
+            
+            
+            <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400"    >
             <a className="end-links" href="/projects"  >
-                 <div className="end-link-projects" data-aos="flip-left" data-aos-delay="400">
-                    <h1>Click here to see more of my projects</h1>
-                </div>
-                </a>
-                <hr id="end-link-br"/>
-                <a className="end-links" href="/contact" >  
+                    <h2 className="end-links-text">Take a look at more of my projects</h2>
+                    </a>
+                    </div>
+                    
                  <div className="end-link-contact" data-aos="flip-right" data-aos-delay="600">
-                <h1>Click here to contact me directly </h1> 
+                 <a className="end-links" href="/contact" > 
+                <h2 className="end-links-text">Contact me directly </h2>
+                   </a>
                 </div>
-                </a>
+               
             </div>
         </div>
     )

@@ -1,20 +1,11 @@
-/*
-Dark Blue: #17252A
 
-Lighter Blue: #2b7a78
-
-Lightest Blue: #3AAFA9
-
-Shadow of Dark Blue: #DEF2F1
-
-Shadow of Light Blue: #FeFFFF
-*/
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #17252a;
+  background: ;
+  background: var(--main-2);
   height: 10vh;
   position: fixed;
   width: 100%;
@@ -47,7 +38,7 @@ Shadow of Light Blue: #FeFFFF
   align-items: center;
 }
 .nav-link:hover {
-  background-color: #2b7a78;
+  background-color: var(--highlight-main);
 }
 
 #logo-div {

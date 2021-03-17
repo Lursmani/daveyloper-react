@@ -4,7 +4,8 @@
     align-items: center;
 }
 #quote-box {
-    background: white;
+    background: var(--main-3);
+    color: var(--secondary-light);
     border-radius: 10px;
     display: grid;
     width: 70%;
@@ -43,7 +44,7 @@
     margin: 1rem 2rem;
     justify-self: right;
     border: none;
-    background: #17252A;
+    background: var(--highlight-main);
     cursor: pointer;
     color: white;
     transition: 0.5s ease;
@@ -53,7 +54,7 @@
 border-radius: 5px;
 }
 #new-quote:hover {
-    background:#2b7a78;
+    background:var(--highlight-main2);
     transition: 0.5s ease;
 }
 #new-quote:active{

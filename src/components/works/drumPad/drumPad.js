@@ -82,14 +82,14 @@ function DrumPad() {
       let audio7 = () => {sound7()}
       let audio8 = () => {sound8()}
       let [sound0] = useSound(drumBank[0].url, {volume: volume} )
-      let [sound1] = useSound(drumBank[0].url, {volume: volume} ) 
-      let [sound2] = useSound(drumBank[0].url, {volume: volume} ) 
-      let [sound3] = useSound(drumBank[0].url, {volume: volume} ) 
-      let [sound4] = useSound(drumBank[0].url, {volume: volume} )
-      let [sound5] = useSound(drumBank[0].url, {volume: volume} )
-      let [sound6] = useSound(drumBank[0].url, {volume: volume} )
-      let [sound7] = useSound(drumBank[0].url, {volume: volume} )
-      let [sound8] = useSound(drumBank[0].url, {volume: volume} )
+      let [sound1] = useSound(drumBank[1].url, {volume: volume} ) 
+      let [sound2] = useSound(drumBank[2].url, {volume: volume} ) 
+      let [sound3] = useSound(drumBank[3].url, {volume: volume} ) 
+      let [sound4] = useSound(drumBank[4].url, {volume: volume} )
+      let [sound5] = useSound(drumBank[5].url, {volume: volume} )
+      let [sound6] = useSound(drumBank[6].url, {volume: volume} )
+      let [sound7] = useSound(drumBank[7].url, {volume: volume} )
+      let [sound8] = useSound(drumBank[8].url, {volume: volume} )
       
       
       

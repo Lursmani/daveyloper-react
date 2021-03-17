@@ -25,36 +25,72 @@
   justify-self: center;
   z-index: 3;
   align-self: center;
+  display: grid;
+  border: 2px solid var(--highlight-main);
+  box-shadow: 1px 1px 3px black;
+  transition: 0.5s ease;
+  padding: 0.2rem 0.2rem;
+  border-radius: 2px;
 }
+.project-link-hover {
+  grid-row: 5/7;
+  grid-column: 1/2;
+  justify-self: center;
+  z-index: 3;
+  align-self: center;
+  display: grid;
+  border: 2px solid var(--highlight-main);
+  transition: 0.5s ease;
+  padding: 0.2rem 0.2rem;
+  border-radius: 2px;
+}
+
 .hidden {
   display: none !important;
 }
 .link-button-nohover {
+  justify-self: center;
+  align-self: center;
   border: none;
-  font-size: 1.4em;
-  padding: 0.2em 0.8em;
-  background: #def2f1;
-  box-shadow: 1px 1px 3px black;
-  border-radius: 5px;
+  background: var(--highlight-main);
   cursor: pointer;
+  z-index: 3;
+  text-decoration: none;
+  color: white;
   transition: 0.4s ease;
+  padding: 0.2rem 0.2rem;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
 }
 .link-button-hover {
+  justify-self: center;
+  align-self: center;
   border: none;
-  font-size: 1.5em;
-  padding: 0.4em 1em;
-  background: #6eb4b1;
+  background: var(--highlight-main);
   box-shadow: 1px 1px 3px black;
-  border-radius: 5px;
   cursor: pointer;
+  z-index: 3;
+  text-decoration: none;
+  color: white;
   transition: 0.4s ease;
-
-  box-shadow: 2px 2px 3px black;
+  padding: 0.2rem 0.2rem;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  transform: translateX(-6px) translateY(-6px);
+  border-radius: 2px;
 }
 .link-button-hover:hover {
-  background: #2b7a78;
+  background: var(--highlight-main2);
   color: #def2f1;
   transition: 0.4s ease;
+}
+.button-text {
+  margin: 0;
 }
 
 .project-description-div-in {

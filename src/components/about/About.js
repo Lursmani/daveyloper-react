@@ -1,5 +1,6 @@
 import React, {useEffect} from "react"
 import myPicture from "./me.jpg"
+import {Helmet} from "react-helmet"
 import "./about.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -23,12 +24,17 @@ function About(props) {
       }, [])
     return (
         <div id="about-container">
+            <Helmet>
+                <title>About me - Davit Lursmanashvili (Daveyloper)</title>
+                <meta name="description" content="Learn more about what tools, frameworks, and technologies I use. Also my education, " />
+            </Helmet>
+
             <div id="about-me-div">
                 <img id="about-me-img" src={myPicture} alt="Me, Davit Lursmanashvili"/>
                 <div data-aos="fade-up" id="about-me-text-div">
                     <h1 data-aos="fade-right" data-aos-delay="500" className="about-me-text" id="about-me-headline">I am Davit Lursmanashvili</h1>
-                    <h2 data-aos="fade-right" data-aos-delay="700" className="about-me-text">Web developer, social scientist, researcher.</h2>
-                    <h3 data-aos="fade-right" data-aos-delay="900" className="about-me-text">This is my portfolio website built with React</h3>
+                    <h2 data-aos="fade-right" data-aos-delay="700" className="about-me-text">Front-end developer, social scientist, researcher.</h2>
+                    <h3 data-aos="fade-right" data-aos-delay="900" className="about-me-text">I build fast, responsive websites with React.</h3>
                     <Link data-aos="fade-right" data-aos-delay="1100" to="about-skills-div" offset={-50} smooth={true} id="about-me-link"><button id="about-me-link-button">My Skills and Experience</button></Link>
                 </div>
             </div>
@@ -36,14 +42,16 @@ function About(props) {
             <div id="about-story-div">
                 <div id="about-story-text-div">
                     <h1 className="about-story-text">
-                        A little bit about myself...
+                       I am front-end developer with a passion for perfection
                     </h1>
                     <p className="about-story-text about-story-p">
-                        I became a developer in 2020, when the whole world was upside down. Since then I have been 
-                        constantly advancing my skills and portfolio as a front-end developer.
+                    I focus on creating responsive, fast websites with interactive elements and good accessibility. 
+                    I use React, CSS, HTML and other supporting technology to deliver the best results. 
+                        
                     </p>
                     <p className="about-story-text about-story-p">
-                    I focus on creating responsive, fast websites with interactive elements and good accessibility. 
+                    I became a developer in 2020, when the whole world was upside down. Since then I have been 
+                    constantly advancing my skills and portfolio as a front-end developer.
                     </p>
                 </div>
             </div>
@@ -112,7 +120,7 @@ function Skills() {
                    <AboutLists/>
 
                 </div>
-               <a href="/projects" id="projects-link"> <button id="projects-button">My Projects</button> </a>
+               <div id="projects-button-div"><a href="/projects" id="projects-button"> <h3 id="projects-button-text">My Projects</h3> </a> </div>
             </div>
 
 

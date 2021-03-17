@@ -33,7 +33,7 @@
   background-color: #9eb8cc;
 }
 .bm-menu {
-  background: #203647;
+  background: var(--main-3);
   padding: 2.5em 0;
   font-size: 1.15em;
   box-shadow: -1px -3px 3px black;
@@ -52,7 +52,7 @@
   transition: 0.5s ease;
 }
 .menu-item:hover {
-    background-color: #2b7a78;
+    background-color: var(--highlight-main);
     transition: 0.5s ease;
 }
 
