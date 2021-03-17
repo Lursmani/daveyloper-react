@@ -27,8 +27,10 @@
   align-self: center;
   display: grid;
   border: 2px solid var(--highlight-main);
+  box-shadow: 1px 1px 3px black;
   transition: 0.5s ease;
   padding: 0.2rem 0.2rem;
+  border-radius: 2px;
 }
 .project-link-hover {
   grid-row: 5/7;
@@ -40,6 +42,7 @@
   border: 2px solid var(--highlight-main);
   transition: 0.5s ease;
   padding: 0.2rem 0.2rem;
+  border-radius: 2px;
 }
 
 .hidden {
@@ -60,7 +63,7 @@
   height: 100%;
   width: 100%;
   margin: 0;
-  
+
 }
 .link-button-hover {
   justify-self: center;
@@ -79,7 +82,7 @@
   width: 100%;
   margin: 0;
   transform: translateX(-6px) translateY(-6px);
-
+  border-radius: 2px;
 }
 .link-button-hover:hover {
   background: var(--highlight-main2);

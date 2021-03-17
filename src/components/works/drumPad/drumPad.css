@@ -4,7 +4,7 @@
     align-self: center;
     width: 50vw;   
     max-width: 100vw; 
-    background: #00251a;
+    background: var(--main-3);
     border-radius: 3px;
     margin: 2rem 0;
     grid-template-columns: repeat(12, 1fr);
@@ -15,7 +15,7 @@
 .drumpad-display {
     grid-row: 2/6;
     grid-column: 5/13;
-    background: #39796b;
+    background: var(--highlight-main);
     font-size: 2em;
     display: grid;
     margin: 1em 0 0.5em 0;
@@ -30,7 +30,7 @@
     margin: 0.2rem;
     height: 7rem;
     width: 7rem;
-    background: #39796b;
+    background: var(--highlight-main);
     border: none;
     border-radius: 3px;
     font-size: 2em;
@@ -38,7 +38,7 @@
     text-shadow: 1px 1px 1px black;
 }
 .drum-pad:hover {
-    background: #75ccb9;
+    background: var(--highlight-main2);
 }
 .drum-pad:active {
     background: #a7ffeb;
@@ -108,7 +108,7 @@
 #drum-power-button-on {
     border-radius: 50%;
     height: 4vh;
-    background: #02a876;
+    background: var(--highlight-main2);
     width: 4vh;
     grid-column: 3/4;
     justify-self: right;

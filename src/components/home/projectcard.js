@@ -21,7 +21,7 @@ function ProjectCard(props) {
     const overlayClass = hover ? "project-description-div-in" : "project-description-div-out" //this is supposed to animate on hoevr-out, but doesn't
 
     return (
-            <div className="project-card-div" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseLeave}>
+            <div className="project-card-div" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseLeave} data-aos={props.animation} data-aos-delay={props.animationDelay}>
                 <img src={props.image} alt={props.imageDescription} className="project-img" />
                 <div className={projectLinkClass}>
                 <a href={props.destination} className={buttonClass} >

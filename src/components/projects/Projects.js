@@ -1,4 +1,5 @@
 import React, {useEffect} from "react"
+import {Helmet} from "react-helmet"
 import "./projects.css"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -38,6 +39,11 @@ function Projects(props) {
 
     return (
         <div className="projects-container">
+            <Helmet>
+                <title>Projects - Davit Lursmanashvili (Daveyloper)</title>
+                <meta name="description" content="This is the portfolio of projects that I've built using mostly React, CSS and HTML. "/>
+            </Helmet>
+
             <div className="projects-title-div" data-aos="fade-up">
                 <h1 className="projects-title">My Projects:</h1>
                 <h2 className="projects-subtitle">While this website itself is one of my projects, below you can see other projects that I have worked on.</h2>
@@ -48,19 +54,19 @@ function Projects(props) {
             >
                 <MainProjectCard
                 image={QuoteGenerator}
-                destination="/quotegenerator.html"
+                destination="/quotegenerator"
                 linkText="Random Quote Generator"
                 description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
                 />
                 <MainProjectCard
                 image={MarkdownPreviewer}
-                destination="/markdownpreviewer.html"
+                destination="/markdownpreviewer"
                 linkText="Markdown Previewer"
                 description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
                 />  
                  <MainProjectCard
                 image={Drumpad}
-                destination="/drumpad.html"
+                destination="/drumpad"
                 linkText="Drum Pad"
                 description="A drumpad that plays different audio files when you press different buttons."
                 />  
@@ -106,7 +112,7 @@ function Projects(props) {
             
            
            <div className="projects-title-div" data-aos="flip-up">
-                <h1 className="projects-title"  >To be continued...</h1>
+                <h1 className="projects-title" style={{color:"#d9dae6"}} >To be continued...</h1>
            </div>
         </div>
     )

@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Header from "./Nav"
 import Footer from "./Footer"
 import Hamburger from "./components/hamburger/hamburger"
-import buildSitemap from 'react-build-sitemap'
 const Contact = React.lazy(() => import ("./components/contact/Contact") )
 const Projects = React.lazy (() => import ("./components/projects/Projects") )
 const About = React.lazy(() => import ("./components/about/About") )
@@ -27,12 +26,12 @@ function App() {
       <Suspense fallback={<Loading/>}>
       <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/about.html" component={About} />
-      <Route path="/projects.html" component={Projects} />
-      <Route path="/contact.html" component={Contact} />
-      <Route path="/quotegenerator.html" component={QuoteGenerator} />
-      <Route path="/markdownpreviewer.html" component={MarkdownPreviewer} />
-      <Route path="/drumpad.html" component={DrumPad} />
+      <Route path="/about" component={About} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/quotegenerator" component={QuoteGenerator} />
+      <Route path="/markdownpreviewer" component={MarkdownPreviewer} />
+      <Route path="/drumpad" component={DrumPad} />
       </Switch>
       </Suspense>
       </div>
