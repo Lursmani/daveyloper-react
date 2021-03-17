@@ -29,14 +29,14 @@ function Home() {
 
         <div className="home-container">
              <Helmet>
-            <title>Davit Lursmanashvili (Daveyloper) - Front-end Developer - Landing Page</title>
-            <meta name="description" content="I am Davit, a front-end developer. I build responsive, optimized websites using 
+            <title>Davit Lursmanashvili (Daveyloper): Front-end Developer - Landing Page</title>
+            <meta name="description" content="Davit Lursmanashvili. I am a front-end developer. I build responsive, optimized websites using 
             React, HTML, and CSS." />
           </Helmet>
             <div className="banner-container">
                 <div id="banner-text-div">
                     <h1 data-aos="fade-right" data-aos-delay="150" className="banner-text">I am Davit Lursmanashvili, a front-end developer</h1>
-                    <h1 data-aos="fade-left" data-aos-delay="250" className="banner-text">And I make pretty cool websites</h1>
+                    <h2 data-aos="fade-left" data-aos-delay="250" className="banner-text">And I make pretty cool websites</h2>
                     <Link data-aos="fade-up" data-aos-delay="350" smooth to="scroll-container" offset={-80}><button id="banner-link">Project Showcase</button> </Link>
                     <Icon data-aos="fade-down" data-aos-delay="550" icon={chevronDown} color="#DEF2F1" id="down-chevron" />
                 </div>
