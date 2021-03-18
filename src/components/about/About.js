@@ -1,6 +1,5 @@
 import React, {useEffect} from "react"
 import myPicture from "./me.jpg"
-import {Helmet} from "react-helmet"
 import "./about.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -39,10 +38,10 @@ function About(props) {
                                <div id="about-story-div">
                 <section id="about-story-text-div">
                     <h1 className="about-story-text" data-aos-delay="300" data-aos="fade-right">
-                       I am a front-end developer with a passion for perfection
+                       I am Davit, a front-end developer from Georgia.
                     </h1>
                     <p className="about-story-text about-story-p" data-aos-delay="500" data-aos="fade-right">
-                    I became a developer in 2020, when the whole world was upside down. Since then I have been 
+                    I became a front-end developer in 2020, when the whole world was upside down. Since then I have been 
                      constantly advancing my skills and portfolio as a front-end developer. 
                     </p>
                     <p className="about-story-text about-story-p" data-aos-delay="700" data-aos="fade-right">
