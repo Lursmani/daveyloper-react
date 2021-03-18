@@ -30,9 +30,9 @@ function Home() {
 
         <div className="home-container">
              <Helmet>
-            <title>Davit Lursmanashvili (Daveyloper) - Front-end Developer - Landing Page</title>
-            <meta name="description" content="I am Davit Lursmanashvili, web developer and a front-end developer. I build responsive, optimized websites using 
-            React, HTML, and CSS. Learn about me and my experience here." />
+            <title>Davit Lursmanashvili Website - React Front-end Developer </title>
+            <meta name="description" content="Davit Lursmanashvili is a web developer and a front-end developer from Georgia. I build responsive, optimized websites using 
+            React, HTML, and CSS. This is my home page/landing page. Learn about me and my experience here. " />
           </Helmet>
             <div className="banner-container">
                 <div id="banner-text-div">
