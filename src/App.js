@@ -7,11 +7,11 @@ import Footer from "./Footer"
 import Hamburger from "./components/hamburger/hamburger"
 const Contact = React.lazy(() => import ("./components/contact/Contact") )
 const Projects = React.lazy (() => import ("./components/projects/Projects") )
-const About = React.lazy(() => import ("./components/about/About") )
 const Home = React.lazy(() => import  ("./components/home/home"));
 const QuoteGenerator = React.lazy(() => import ("./components/works/quote-generator/quote-generator"))
 const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownPreviewer/markdownpreviewer"))
 const DrumPad = React.lazy(() => import ("./components/works/drumPad/drumPad"))
+const Calculator = React.lazy(() => import ("./components/works/calculator/calculator") )
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
       <Route path="/quotegenerator" component={QuoteGenerator} />
       <Route path="/markdownpreviewer" component={MarkdownPreviewer} />
       <Route path="/drumpad" component={DrumPad} />
+      <Route path="/calculator" component={Calculator} />
       </Switch>
       </Suspense>
       </div>

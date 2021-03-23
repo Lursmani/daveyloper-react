@@ -43,13 +43,13 @@ body {
   grid-row: 2/3;
   /* found at heropatterns.com */
   background-color: #000000;
-  background-image: url("./components//mainbg.svg");
+  background-image: url("./components/mainbg.svg");
   background-attachment: fixed;
   background-size: cover;;
 }
 
 @media only screen and (max-width: 768px) {
   .nav-offset {
-    height: 15vh;
+    height: 11vh;
   }
 }

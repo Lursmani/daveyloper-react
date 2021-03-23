@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: ;
   background: var(--main-2);
   height: 10vh;
   position: fixed;
