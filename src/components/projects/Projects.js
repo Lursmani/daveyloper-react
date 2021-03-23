@@ -12,6 +12,7 @@ import SurveyForm from "./images/surveyform.png"
 import QuoteGenerator from "./images/quoteGenerator.PNG"
 import MarkdownPreviewer from "./images/MarkdownPreviewer.png"
 import Drumpad from "./images/drumpad.PNG"
+import Calculator from "./images/calculator.PNG"
 
 
 const responsive = {
@@ -41,7 +42,7 @@ function Projects(props) {
         <div className="projects-container">
             <Helmet>
                 <title>Projects - Davit Lursmanashvili (Daveyloper)</title>
-                <meta name="description" content="This is the portfolio of projects that I've built using mostly React, CSS and HTML. "/>
+                <meta name="description" content="This is the portfolio of projects that I've built using mostly React, CSS and HTML. Visit to view the projects that I have built."/>
             </Helmet>
 
             <div className="projects-title-div" data-aos="fade-up">
@@ -58,18 +59,26 @@ function Projects(props) {
                 linkText="Random Quote Generator"
                 description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
                 />
-                <MainProjectCard
-                image={MarkdownPreviewer}
-                destination="/markdownpreviewer"
-                linkText="Markdown Previewer"
-                description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
-                />  
+                  <MainProjectCard
+                image={Calculator}
+                destination="/calculator"
+                linkText="Calculator"
+                description="A calculator built with Reactjs."
+                /> 
+               
                  <MainProjectCard
                 image={Drumpad}
                 destination="/drumpad"
                 linkText="Drum Pad"
                 description="A drumpad that plays different audio files when you press different buttons."
                 />  
+                 <MainProjectCard
+                image={MarkdownPreviewer}
+                destination="/markdownpreviewer"
+                linkText="Markdown Previewer"
+                description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
+                />  
+                
 
             </ProjectCarousel>
 

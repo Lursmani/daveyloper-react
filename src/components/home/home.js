@@ -11,7 +11,7 @@ import ProjectCard from "./projectcard"
 import Drumpad from "../projects/images/drumpad.PNG"
 import QuoteGenerator from "../projects/images/quoteGenerator.PNG"
 import MarkdownPreviewer from "../projects/images/MarkdownPreviewer.png"
-import About from "../about/About"
+import About from "./About"
 
 
 AOS.init(
@@ -31,7 +31,7 @@ function Home() {
         <div className="home-container">
              <Helmet>
             <title>Davit Lursmanashvili Website - React Front-end Developer </title>
-            <meta name="description" content="Davit Lursmanashvili is a web developer and a front-end developer from Georgia. I build responsive, optimized websites using 
+            <meta name="description" content="Davit Lursmanashvili. A web developer and a front-end developer from Georgia. I build responsive, optimized websites using 
             React, HTML, and CSS. This is my home page/landing page. Learn about me and my experience here. " />
           </Helmet>
             <div className="banner-container">

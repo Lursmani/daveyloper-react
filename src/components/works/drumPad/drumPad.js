@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import "./drumPad.css"
+import {Helmet} from "react-helmet"
 import Heater1 from "./Heater-1.mp3"
 import Heater2 from "./Heater-2.mp3"
 import Heater3 from "./Heater-3.mp3"
@@ -157,7 +158,14 @@ function DrumPad() {
 
      
     return (
+        
         <div id="drum-machine" className="drumpad-container" >
+                   <Helmet>
+                     <title>Drumpad - Davit Lursmanashvili</title>
+                     <meta type="description" content="Davit Lursmanashvili. This project is a Drumpad that uses 
+                     HTML, CSS and React to play sounds on key and button presses." />
+                  </Helmet>
+
             <h3 id={powerOn ? "drum-power-text-on" : "drum-power-text-off"}>Power: </h3>
             <div id="drum-power-div" onClick={() => setPowerOn(!powerOn)}>
               <div id={powerOn ? "drum-power-button-on" : "drum-power-button-off"}>
