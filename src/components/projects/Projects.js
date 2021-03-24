@@ -13,6 +13,7 @@ import QuoteGenerator from "./images/quoteGenerator.PNG"
 import MarkdownPreviewer from "./images/MarkdownPreviewer.png"
 import Drumpad from "./images/drumpad.PNG"
 import Calculator from "./images/calculator.PNG"
+import Timer from "./images/Timer.PNG"
 
 
 const responsive = {
@@ -68,7 +69,7 @@ function Projects(props) {
                 description="A drumpad that plays different audio files when you press different buttons."
                 />  
                 <MainProjectCard
-                image={QuoteGenerator}
+                image={Timer}
                 destination="/25timer"
                 linkText="25+5 Timer"
                 description="A dual timer that starts the second countdown when one countdown is over."
