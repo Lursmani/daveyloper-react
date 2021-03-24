@@ -53,12 +53,7 @@ function Projects(props) {
                 title="React Projects"
                 description="These are some projects that I worked on to get familiar with React"
             >
-                <MainProjectCard
-                image={QuoteGenerator}
-                destination="/quotegenerator"
-                linkText="Random Quote Generator"
-                description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
-                />
+                
                   <MainProjectCard
                 image={Calculator}
                 destination="/calculator"
@@ -72,6 +67,18 @@ function Projects(props) {
                 linkText="Drum Pad"
                 description="A drumpad that plays different audio files when you press different buttons."
                 />  
+                <MainProjectCard
+                image={QuoteGenerator}
+                destination="/25timer"
+                linkText="25+5 Timer"
+                description="A dual timer that starts the second countdown when one countdown is over."
+                />
+                <MainProjectCard
+                image={QuoteGenerator}
+                destination="/quotegenerator"
+                linkText="Random Quote Generator"
+                description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
+                />
                  <MainProjectCard
                 image={MarkdownPreviewer}
                 destination="/markdownpreviewer"
