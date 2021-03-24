@@ -1,0 +1,136 @@
+#timer-container {
+    display: grid;
+    color: var(--secondary-light);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--main-3);
+    padding: 1rem;
+    max-height: 80vh;
+    height: min-content;
+
+}
+#mytimer-title{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    justify-self: center;
+    margin: 0;
+}
+#timer-session-box {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    padding: 0 1rem;
+}
+.timer-sb-label {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    }
+.timer-sb-length {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.8rem;
+    margin: 0;
+}
+.mytimer-increment{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    background: var(--highlight-main);
+    color: var(--secondary-light);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+}
+.mytimer-decrement {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    background: var(--highlight-main);
+    color: var(--secondary-light);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+#timer-rest-box {
+    display: grid;
+    grid-column: 4/7;
+    grid-row: 2/3;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    padding: 0 1rem;
+
+}
+#timer-display-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1/6;
+    grid-row: 3/4;
+    margin-top: 1rem;
+}
+#mytimer-label {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+#mytime-left {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: start;
+    font-size: 1.6rem;
+    margin: 0;
+
+}
+#mytimer-start {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.4rem;
+    background: var(--highlight-main);
+    color: var(--secondary-light);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    margin: 0.5rem 0.4rem;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+}
+#mytimer-reset {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.4rem;
+    background: var(--highlight-main);
+    color: var(--secondary-light);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    margin: 0.5rem 0.4rem;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media only screen and (max-width: 768px) {
+    #timer-container {
+        width: 95%;
+    }
+}

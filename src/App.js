@@ -12,6 +12,7 @@ const QuoteGenerator = React.lazy(() => import ("./components/works/quote-genera
 const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownPreviewer/markdownpreviewer"))
 const DrumPad = React.lazy(() => import ("./components/works/drumPad/drumPad"))
 const Calculator = React.lazy(() => import ("./components/works/calculator/calculator") )
+const Timer25 = React.lazy(()=> import ("./components/works/25timer/25timer"))
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Route path="/markdownpreviewer" component={MarkdownPreviewer} />
       <Route path="/drumpad" component={DrumPad} />
       <Route path="/calculator" component={Calculator} />
+      <Route path="/25timer" component={Timer25} />
       </Switch>
       </Suspense>
       </div>
