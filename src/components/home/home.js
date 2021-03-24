@@ -9,8 +9,8 @@ import 'aos/dist/aos.css';
 import {Helmet} from "react-helmet"
 import ProjectCard from "./projectcard"
 import Drumpad from "../projects/images/drumpad.PNG"
-import QuoteGenerator from "../projects/images/quoteGenerator.PNG"
-import MarkdownPreviewer from "../projects/images/MarkdownPreviewer.png"
+import Timer from "../projects/images/Timer.PNG"
+import Calculator from "../projects/images/calculator.PNG"
 import About from "./About"
 
 
@@ -52,10 +52,10 @@ function Home() {
             <ProjectCard 
             animation="fade-up"
             animationDelay="200"
-            image={QuoteGenerator}
-            destination="/quotegenerator"
-            linkText="Random Quote Generator"
-            description="A random quote Generator that displays quotes from an API. Part of the FreeCodeCamp React course."
+            image={Timer}
+            destination="/25timer"
+            linkText="Interval Timer"
+            description="A dual timer that starts the second countdown when one countdown is over."
             />
              <ProjectCard 
              animation="fade-up"
@@ -68,10 +68,10 @@ function Home() {
              <ProjectCard 
              animation="fade-up"
              animationDelay="600"
-            image={MarkdownPreviewer}
-            destination="/markdownpreviewer"
-            linkText="Markdown Previewer"
-            description="An app that lets you markdown plain text into HTML. Uses the 'marked' parser. "
+            image={Calculator}
+            destination="/calculator"
+            linkText="React Calculator"
+            description="A calculator built with React."
             />
             </div>
 
