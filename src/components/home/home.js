@@ -1,5 +1,8 @@
 import React, {useEffect} from "react"
 import BannerImage from "./banner-image.png" 
+import LightSpeed from "react-reveal/LightSpeed"
+import Flip from "react-reveal/Flip"
+import Fade from "react-reveal/Fade"
 import "./home.css"
 import { Link,  } from 'react-scroll'
 import { Icon, } from '@iconify/react';
@@ -36,45 +39,57 @@ function Home() {
           </Helmet>
             <div className="banner-container">
                 <div id="banner-text-div">
-                    <h1 data-aos="fade-right" data-aos-delay="150" className="banner-text">I am Davit Lursmanashvili, a front-end developer</h1>
-                    <h2 data-aos="fade-left" data-aos-delay="250" className="banner-text">And I make pretty cool websites</h2>
-                    <Link data-aos="fade-up" data-aos-delay="350" smooth to="scroll-container" offset={-80}><button id="banner-link">Project Showcase</button> </Link>
-                    <Icon data-aos="fade-down" data-aos-delay="550" icon={chevronDown} color="#DEF2F1" id="down-chevron" />
+                <LightSpeed left  duration={400} >
+                    <h1 className="banner-text">I am Davit Lursmanashvili, a front-end developer</h1>
+                    </LightSpeed>
+                    <LightSpeed right duration={400} delay={200}>
+                    <h2 className="banner-text">And I make pretty cool websites</h2>
+                    </LightSpeed>
+                    <LightSpeed left right duration={400} delay={350}>
+                    <Link  smooth to="scroll-container" offset={-80}><button id="banner-link">Project Showcase</button> </Link>
+                    </LightSpeed>
+                    <LightSpeed bottom right duration={400} delay={550}>
+                    <Icon  icon={chevronDown} color="#DEF2F1" id="down-chevron" />
+                    </LightSpeed>
                 </div>
+                
                 <img src={BannerImage} alt="" id="banner-image" />
             </div>
-            <div id="scroll-title-div" data-aos="flip-up">
+            <Flip top>
+            <div id="scroll-title-div">
                 <h2 id="scroll-title">
                     Check out some of my projects below:
                 </h2>
             </div>
+            </Flip>
+           
             <div className="scroll-container">
+            <Fade bottom>
             <ProjectCard 
-            animation="fade-up"
-            animationDelay="200"
             image={Timer}
             destination="/25timer"
             linkText="Interval Timer"
             description="A dual timer that starts the second countdown when one countdown is over."
             />
+            </Fade>
+            <Fade bottom delay={150}>
              <ProjectCard 
-             animation="fade-up"
-             animationDelay="400"
              image={Drumpad}
              destination="/drumpad"
              linkText="Drum Pad"
              description="A drumpad that plays different audio files when you press different buttons."
             />
+            </Fade>
+           <Fade bottom delay={300}>
              <ProjectCard 
-             animation="fade-up"
-             animationDelay="600"
             image={Calculator}
             destination="/calculator"
             linkText="React Calculator"
             description="A calculator built with React."
-            />
+            /></Fade>
+            
             </div>
-
+       
 
 
             <About/>

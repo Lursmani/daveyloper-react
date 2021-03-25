@@ -36,30 +36,7 @@
   justify-items: center;
 }
 
-/*
-#about-me-link {
-  cursor: pointer;
-}
 
-#about-me-link-button {
-  padding: 1.5em;
-  background: var(--highlight-main);
-  color: aliceblue;
-  text-shadow: 1px 1px black;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.3em;
-  transition: 0.5s ease;
-}
-#about-me-link-button:hover {
-  background: var(--highlight-main2);
-  transition: 0.5s ease;
-}
-.about-me-text {
-  margin: 1em;
-}
-*/
 
 #about-story-div {
   width: 100%;
@@ -224,6 +201,9 @@
   flex: 0 1 150px; /*  No stretching: */
   color: var(--secondary-light);
   margin-top: 1em;
+}
+#languages-flex .react-reveal {
+  flex: 0 1 150px; 
 }
 .language-card-title {
   font-size: 4em;
