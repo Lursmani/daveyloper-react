@@ -13,6 +13,9 @@ Shadow of Light Blue: #FeFFFF
 .projects-container {
   display: grid;
 }
+.projects-container .react-reveal {
+  justify-self: center;
+}
 .projects-title-div {
   display: grid;
   height: auto;
