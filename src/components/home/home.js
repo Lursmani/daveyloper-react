@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 import {Helmet} from "react-helmet"
 import ProjectCard from "./projectcard"
 import Drumpad from "../projects/images/drumpad.PNG"
-import Timer from "../projects/images/Timer.PNG"
+import CarouselImage from "../projects/images/carousel.PNG"
 import Calculator from "../projects/images/calculator.PNG"
 import About from "./About"
 
@@ -33,7 +33,7 @@ function Home() {
 
         <div className="home-container">
              <Helmet>
-            <title>Davit Lursmanashvili Website - React Front-end Developer </title>
+            <title>Davit Lursmanashvili Homepage - React Front-end Developer </title>
             <meta name="description" content="Davit Lursmanashvili. A web developer and a front-end developer from Georgia. I build responsive, optimized websites using 
             React, HTML, and CSS. This is my home page/landing page. Learn about me and my experience here. " />
           </Helmet>
@@ -58,7 +58,7 @@ function Home() {
             <Flip top>
             <div id="scroll-title-div">
                 <h2 id="scroll-title">
-                    Check out some of my projects below:
+                    Check out some of my latest projects below:
                 </h2>
             </div>
             </Flip>
@@ -66,10 +66,10 @@ function Home() {
             <div className="scroll-container">
             <Fade bottom>
             <ProjectCard 
-            image={Timer}
-            destination="/25timer"
-            linkText="Interval Timer"
-            description="A dual timer that starts the second countdown when one countdown is over."
+            image={CarouselImage}
+            destination="/carousel"
+            linkText="Carousel"
+            description="A responsive carousel that can accept any HTML content."
             />
             </Fade>
             <Fade bottom delay={150}>

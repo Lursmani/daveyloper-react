@@ -14,6 +14,7 @@ import MarkdownPreviewer from "./images/MarkdownPreviewer.png"
 import Drumpad from "./images/drumpad.PNG"
 import Calculator from "./images/calculator.PNG"
 import Timer from "./images/Timer.PNG"
+import CarouselImage from "./images/carousel.PNG"
 
 
 const responsive = {
@@ -55,6 +56,12 @@ function Projects(props) {
                 description="These are some projects that I worked on to get familiar with React"
             >
                 
+                <MainProjectCard
+                image={CarouselImage}
+                destination="/carousel"
+                linkText="Carousel"
+                description="A responsive carousel that can accept any HTML content."
+                /> 
                   <MainProjectCard
                 image={Calculator}
                 destination="/calculator"
