@@ -13,6 +13,7 @@ const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownP
 const DrumPad = React.lazy(() => import ("./components/works/drumPad/drumPad"))
 const Calculator = React.lazy(() => import ("./components/works/calculator/calculator") )
 const Timer25 = React.lazy(()=> import ("./components/works/25timer/25timer"))
+const Carousel = React.lazy(() => import ("./components/works/carousel/demo/carouselView") )
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path="/drumpad" component={DrumPad} />
       <Route path="/calculator" component={Calculator} />
       <Route path="/25timer" component={Timer25} />
+      <Route path="/carousel" component={Carousel} />
       </Switch>
       </Suspense>
       </div>
@@ -58,7 +60,3 @@ export default App;
 
 
 
-
-// import About from "./components/about/About"
-// import Projects from "./components/projects/Projects"
-// import Contact from "./components/contact/Contact"

@@ -1,0 +1,32 @@
+.buttonlifter-border {
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.buttonlifter-content-nohov {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    color: lightgray;
+    transition: 0.3s ease;
+}
+.buttonlifter-content-hov {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    color: lightgray;
+    transform: translateX(-8px) translateY(-8px);
+    transition: 0.3s ease;
+    border-radius: 2px;
+
+}
+
+.buttonlifter-link {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
