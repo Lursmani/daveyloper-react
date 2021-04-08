@@ -116,11 +116,6 @@
   grid-template-rows: min-content min-content;
   width: 80%;
 }
-#languages-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 .languages-headline {
   justify-self: center;
   color: var(--highlight-main);
@@ -202,9 +197,22 @@
   color: var(--secondary-light);
   margin-top: 1em;
 }
-#languages-flex .react-reveal {
-  flex: 0 1 150px; 
+
+
+#languages-list {
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  padding: 0;
 }
+#languages-list > li {
+  flex: 0 1 150px;
+
+}
+
 .language-card-title {
   font-size: 4em;
   grid-row: 1/2;
@@ -234,8 +242,11 @@
   #projects-button {
     width: 100%;
   }
-  #languages-flex {
+
+  #languages-list {
     justify-content: space-between;
+    width: 90%;
+    justify-self: center;
   }
   #projects-button-div {
     width: 80%;

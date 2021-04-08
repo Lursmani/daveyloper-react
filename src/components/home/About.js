@@ -55,55 +55,66 @@ function Skills() {
     return (
         <section id="about-skills-div">
                 <div id="languages-div">
-                   <div className="languages-headline-div"> <h1 className="languages-headline">
+                   <div className="languages-headline-div"> 
+                   <h1 className="languages-headline">
                         Development languages and frameworks:
-                    </h1> </div>
+                    </h1>
+                     </div>
                    
-                    <div id="languages-flex">
-                    <Fade bottom>
-                        <LanguageCard 
-                        title = {<FontAwesomeIcon icon={faReact} />}
-                        text="React"
-                        />
-                    </Fade>
-                    <Fade top>
-                        <LanguageCard 
-                        title = {<FontAwesomeIcon icon={faJsSquare} />}
-                        text="Javascript"
-                        />
-                    </Fade>
-                     <Fade bottom>
-                        <LanguageCard 
-                        title= {<FontAwesomeIcon icon={faHtml5} />}
-                        text="HTML5" 
-                        />
-                    </Fade>
-                    <Fade top>
-                        <LanguageCard
-                            title={<FontAwesomeIcon icon={faCss3Alt} />}
-                            text="CSS3"
-                        />
-                    </Fade>
-                     <Fade bottom>
-                        <LanguageCard
-                            title={<FontAwesomeIcon icon={faSass} />}
-                            text="SASS"
-                        />
-                    </Fade>    
-                    <Fade top>
-                        <LanguageCard 
-                        title = {<FontAwesomeIcon icon={faBootstrap} />}
-                        text="Bootstrap"
-                        />
-                     </Fade>   
-                     <Fade bottom>
-                        <LanguageCard 
-                        title = {<Icon icon={reduxIcon} />}
-                        text="Redux"
-                        />
-                    </Fade>
+                   
+         
+                    <Fade  right cascade> <ul id="languages-list" >
 
-                    </div>
+                    <li>
+                            <LanguageCard
+                            title = {<FontAwesomeIcon icon={faReact} />}
+                            text="React"
+                            />
+                    </li>
+                    <li>  
+                            <LanguageCard
+                            title = {<FontAwesomeIcon icon={faJsSquare} />}
+                            text="Javascript"
+                            />
+                    </li>
+
+                     <li>
+                            <LanguageCard
+                            title= {<FontAwesomeIcon icon={faHtml5} />}
+                            text="HTML5"
+                            />
+                     </li>
+
+                    <li>
+                            <LanguageCard
+                                title={<FontAwesomeIcon icon={faCss3Alt} />}
+                                text="CSS3"
+                            />
+                    </li>
+
+                     <li>
+                            <LanguageCard
+                                title={<FontAwesomeIcon icon={faSass} />}
+                                text="SASS"
+                            />
+                     </li>  
+
+                    <li>
+                            <LanguageCard
+                            title = {<FontAwesomeIcon icon={faBootstrap} />}
+                            text="Bootstrap"
+                            />
+                    </li>
+
+                     <li>
+                            <LanguageCard
+                            title = {<Icon icon={reduxIcon} />}
+                            text="Redux"
+                            />
+                     </li>
+                     </ul>
+                     </Fade>
+                    
                  
 
                    <AboutLists/>
