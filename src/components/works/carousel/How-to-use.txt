@@ -10,11 +10,11 @@ To set up the carousel, place the <CarouselWrapper> </CarouselWrapper> component
 and then place the <Slide> </Slide> components within the wrapper component. 
 
 The <Slide> component must surround the items you wish to place in the carousel, as it standardizes the width/height and prevents issues with different
-sized elements. 
+sized elements. NOTE: the "show" props is mandatory. It sets how many slides can be seen on the screen at once. 
 
 It should look like this: 
 
-    <CarouselWrapper> 
+    <CarouselWrapper show={1}> 
         <Slide>
             <any HTML element>
         </Slide>
@@ -54,6 +54,8 @@ the <CarouselWrapper> component. The minimal setup doesn't require any styling o
     the inner container is centerd within the outer container. You can add padding to the carousel by making the inner container smaller
     than the outer container. 
 
+    {show={}} is a prop that sets the number of slides visible ont the screen at once. Only works on desktop devices, on tablet and mobile devices
+    only one slide can be shown at once. 
     
 
 
