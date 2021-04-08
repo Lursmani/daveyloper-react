@@ -17,6 +17,11 @@ function Carousel(props) {
         return x
     }
     const breakpoint = breakpoints()
+    const itemWidth = () => {
+        let x = props.show
+        let width = 100 / x
+        return width
+    }
 
 
     useEffect(() => {
@@ -55,12 +60,13 @@ function Carousel(props) {
                 &lt;
                 </button> }
                 <div className="carousel-content-wrapper">
-               { index < children.length -1 &&    <button className="right-arrow" onClick={next}>
+               { index < children.length - props.show &&    <button className="right-arrow" onClick={next}>
                     &gt;
                 </button>}
                 {/* the sliding is done by the translateX below. it translates by (100% of the slides * the index of the slide) from the starting position.  */}
                     <div className="carousel-content"
-                    style={{transform: mobile === "false" && `translateX(-${index * 100 }%)`}}
+                    style={{transform: mobile === "false" && `translateX(-${index * 100 }%)`,
+                            width: mobile === "false" && `${100 / props.show}%`}}
                     >
                         { children}
                     </div>
