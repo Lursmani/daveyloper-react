@@ -6,7 +6,7 @@
   background-color: #000000;
   background-image: url("../mainbg.svg");
   background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
 }
 #about-me-div {
   display: grid;
@@ -36,15 +36,13 @@
   justify-items: center;
 }
 
-
-
 #about-story-div {
   width: 100%;
   justify-self: end;
   grid-column: 6/13;
   grid-row: 1/10;
   align-self: center;
-} 
+}
 
 #about-story-text-div {
   display: grid;
@@ -69,7 +67,7 @@
     box-shadow: none;
     margin: 1rem 0;
   }
-  #about-me-img  {
+  #about-me-img {
     grid-column: 1/13;
     grid-row: 1/4;
     width: 19rem;
@@ -198,7 +196,6 @@
   margin-top: 1em;
 }
 
-
 #languages-list {
   display: flex;
   justify-self: center;
@@ -208,9 +205,9 @@
   list-style: none;
   padding: 0;
 }
-#languages-list > li {
+.languages-list-item {
   flex: 0 1 150px;
-
+  padding: 0 1em;
 }
 
 .language-card-title {
@@ -226,8 +223,6 @@
   margin: 0;
   padding: 0;
 }
-
-
 
 @media only screen and (max-width: 768px) {
   #languages-div {
@@ -245,8 +240,13 @@
 
   #languages-list {
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     justify-self: center;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .languages-list-item {
+    padding: 0;
   }
   #projects-button-div {
     width: 80%;
