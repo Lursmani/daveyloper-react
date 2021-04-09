@@ -66,6 +66,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify-icons/cib": "^1.1.0",
     "@iconify-icons/el": "^1.1.0",
     "@iconify-icons/simple-icons": "^1.1.11",
     "@iconify-icons/vscode-icons": "^1.1.1",

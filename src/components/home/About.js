@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact, faHtml5, faCss3Alt, faSass, faBootstrap, faJsSquare} from "@fortawesome/free-brands-svg-icons"
 import { Icon, InlineIcon } from '@iconify/react';
 import reduxIcon from '@iconify-icons/simple-icons/redux';
+import jqueryIcon from '@iconify-icons/cib/jquery';
+
 
 
 
@@ -65,52 +67,58 @@ function Skills() {
          
                     <Fade  right cascade> <ul id="languages-list" >
 
-                    <li>
+                    <li className="languages-list-item">
                             <LanguageCard
                             title = {<FontAwesomeIcon icon={faReact} />}
                             text="React"
                             />
                     </li>
-                    <li>  
+                    <li className="languages-list-item">  
                             <LanguageCard
                             title = {<FontAwesomeIcon icon={faJsSquare} />}
                             text="Javascript"
                             />
                     </li>
 
-                     <li>
+                     <li className="languages-list-item">
                             <LanguageCard
                             title= {<FontAwesomeIcon icon={faHtml5} />}
                             text="HTML5"
                             />
                      </li>
 
-                    <li>
+                    <li className="languages-list-item">
                             <LanguageCard
                                 title={<FontAwesomeIcon icon={faCss3Alt} />}
                                 text="CSS3"
                             />
                     </li>
 
-                     <li>
+                     <li className="languages-list-item">
                             <LanguageCard
                                 title={<FontAwesomeIcon icon={faSass} />}
                                 text="SASS"
                             />
                      </li>  
 
-                    <li>
+                    <li className="languages-list-item">
                             <LanguageCard
                             title = {<FontAwesomeIcon icon={faBootstrap} />}
                             text="Bootstrap"
                             />
                     </li>
 
-                     <li>
+                     <li className="languages-list-item">
                             <LanguageCard
                             title = {<Icon icon={reduxIcon} />}
                             text="Redux"
                             />
+                     </li>
+                     <li className="languages-list-item">
+                         <LanguageCard
+                         title = {<Icon icon={jqueryIcon} />}
+                          text = "jQuery"
+                         />
                      </li>
                      </ul>
                      </Fade>
