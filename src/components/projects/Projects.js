@@ -15,6 +15,7 @@ import Drumpad from "./images/drumpad.PNG"
 import Calculator from "./images/calculator.PNG"
 import Timer from "./images/Timer.PNG"
 import CarouselImage from "./images/carousel.PNG"
+import Gitsearch from "./images/gitsearch.PNG"
 
 
 const responsive = {
@@ -55,7 +56,12 @@ function Projects(props) {
                 title="React Projects"
                 description="These are some projects that I worked on to get familiar with React"
             >
-                
+                <MainProjectCard
+                image={Gitsearch}
+                destination="https://github-seach-project.netlify.app/users"
+                linkText="Github Search Tool"
+                description="An app that lets you search github users, display their repos and sort the results. Using Github Search API with dinamic routing."
+                /> 
                 <MainProjectCard
                 image={CarouselImage}
                 destination="/carousel"
