@@ -11,7 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {Helmet} from "react-helmet"
 import ProjectCard from "./projectcard"
-import Drumpad from "../projects/images/drumpad.PNG"
+import Gitsearch from "../projects/images/gitsearch.PNG"
 import CarouselImage from "../projects/images/carousel.PNG"
 import Calculator from "../projects/images/calculator.PNG"
 import About from "./About"
@@ -74,10 +74,10 @@ function Home() {
             </Fade>
             <Fade bottom delay={150}>
              <ProjectCard 
-             image={Drumpad}
-             destination="/drumpad"
-             linkText="Drum Pad"
-             description="A drumpad that plays different audio files when you press different buttons."
+             image={Gitsearch}
+             destination="https://github-seach-project.netlify.app/users"
+             linkText="Github Search Tool"
+             description="An app that lets you search github users, display their repos and sort the results. Using Github Search API with dinamic routing."
             />
             </Fade>
            <Fade bottom delay={300}>
