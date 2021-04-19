@@ -32,13 +32,14 @@
   grid-row: 5/7;
   grid-column: 1/2;
   display: grid;
-  height: min-content;
+  margin: 0;
   justify-self: center;
   align-self: center;
   z-index: 3;
-  border: 2px solid var(--highlight-main);
+  border: 0.15rem solid var(--highlight-main);
   box-shadow: 1px 1px 3px black;
-  border-radius: 3px;
+  border-radius: 2px;
+  padding: 0.25rem 0.35rem;
 }
 .buttondiv-hover {
   grid-row: 5/7;
@@ -48,45 +49,52 @@
   justify-self: center;
   align-self: center;
   z-index: 3;
-  border: 2px solid var(--highlight-main);
+  border: 0.15rem solid var(--highlight-main);
+  padding: 0.25rem 0.35rem;
   border-radius: 3px;
 }
 .main-link-button-nohover {
   border: none;
   justify-self: center;
-  font-size: 1em;
   background: var(--highlight-main);
   color: white;
   cursor: pointer;
   transition: 0.4s ease;
   text-decoration: none;
   justify-self: center;
-  padding: 0 0.5rem;
-  font-size: 1.1em;
+  align-self: center;
+  font-size: 1.3em;
   display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 0.30rem 0.40rem;
+  justify-items: center;
+  align-items: center;
 }
 .main-link-button-hover {
   border: none;
-  font-size: 1.1em;
+  justify-self: center;
   background: var(--highlight-main);
   color: white;
-  text-decoration: none;
-  box-shadow: 1px 1px 3px black;
   cursor: pointer;
   transition: 0.4s ease;
+  text-decoration: none;
   justify-self: center;
-  transform: translateX(-6px) translateY(-6px);
-  padding: 0 0.3rem;
-  border-radius: 2px;
+  align-self: center;
+  font-size: 1.3em;
   display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 0.30rem 0.40rem;
+  justify-items: center;
+  align-items: center;
+  transform: translateX(-6px) translateY(-6px);
+  border-radius: 2px;
 }
 .main-link-button-hover:hover {
   background: var(--highlight-main2);
   color: #def2f1;
   transition: 0.4s ease;
-}
-.main-project-text {
-  margin: 0.7rem 0.5rem;
 }
 .project-description-div-in {
   grid-row: 1/7;
