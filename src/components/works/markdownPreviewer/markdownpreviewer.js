@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState,} from "react"
 import "./markdownpreviewer.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faExpand, faCompress } from "@fortawesome/free-solid-svg-icons"
@@ -18,14 +18,7 @@ function MarkdownPreviewer() {
         return setViewerExpanded(!viewerExpanded)
     }
     
-    const placeholder = ` # Header 1  \n  [link](google.com)   \n  ##  d  \n  **bold** \n > block quote \n ![Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "My Logo") \n - a list 
-
-   
-    \`some code\` 
-    \`\`\`
-    code block
-    \`\`\`
-    `
+    
    
 
     return (

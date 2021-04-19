@@ -6,7 +6,7 @@ import "./about.css"
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact, faHtml5, faCss3Alt, faSass, faBootstrap, faJsSquare} from "@fortawesome/free-brands-svg-icons"
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon, } from '@iconify/react';
 import reduxIcon from '@iconify-icons/simple-icons/redux';
 import jqueryIcon from '@iconify-icons/cib/jquery';
 
@@ -139,6 +139,13 @@ function Skills() {
             <div className="end-link-contact" >
             <a className="end-links" href="/contact" > 
                 <h2 className="end-links-text">Contact me directly </h2>
+            </a>
+            </div>
+            </Flip>
+            <Flip right>   
+            <div className="end-link-cv" >
+            <a className="end-links" href="https://drive.google.com/file/d/1Ne-WnNbI--WWCvHEb520ZOjTv7EXXeD4/view?usp=sharing"> 
+                <h2 className="end-links-text">Download my CV </h2>
             </a>
             </div>
             </Flip>

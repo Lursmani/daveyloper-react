@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import "./drumPad.css"
 import {Helmet} from "react-helmet"
 import Heater1 from "./Heater-1.mp3"
