@@ -19,7 +19,6 @@ function QuoteGenerator() {
 
 
     const [allQuotes, setAllQuotes] = useState([])
-    const [quoteIndex, setQuoteIndex] = useState(randomNumber())
     const [text, setText] = useState("Loading...")
     const [author, setAuthor] = useState("Loading...")
     const [chosenQuote, setChosenQuote] = useState({})
@@ -56,7 +55,7 @@ function QuoteGenerator() {
                 <h1 id="quote-text">{text}</h1>
                 <p id="quote-author">{author}</p>
                 <button id="new-quote" onClick={handleClick} title="Get a new quote">New Quote</button>
-                <a id="tweet-quote" href={TweetLink} target="_blank" title="Share on Twitter"><FontAwesomeIcon icon={faTwitter} /></a>
+                <a id="tweet-quote" href={TweetLink} target="_blank" rel="noreferrer" title="Share on Twitter"><FontAwesomeIcon icon={faTwitter} /></a>
                 </div>
         </div>
     )

@@ -96,13 +96,13 @@ function Timer25() {
             </Helmet>
             <h1 id="mytimer-title">Interval Timer</h1>
             <div id="timer-session-box">
-                <h3 class="timer-sb-label">Session Length: </h3>
+                <h3 className="timer-sb-label">Session Length: </h3>
                 <p className="timer-sb-length">{sessionMinutes}</p>
                 <button id="timer-session-decrement" className="mytimer-button mytimer-increment" onClick={sessionDecrement}><FontAwesomeIcon icon={faArrowDown} /></button>
                 <button id="timer-session-increment" className="mytimer-button mytimer-decrement" onClick={sessionIncrement}><FontAwesomeIcon icon={faArrowUp} /></button>
             </div>
             <div  id="timer-rest-box">
-                <h3 class="timer-sb-label">Break Length: </h3>
+                <h3 className   ="timer-sb-label">Break Length: </h3>
                 <p className="timer-sb-length">{restMinutes}</p>
                 <button id="timer-break-decrement" className="mytimer-button mytimer-increment" onClick={restDecrement}><FontAwesomeIcon icon={faArrowDown} /></button>
                 <button id="timer-break-increment" className="mytimer-button mytimer-decrement" onClick={restIncrement}><FontAwesomeIcon icon={faArrowUp} /></button>

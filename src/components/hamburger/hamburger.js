@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./hamburger.css"
 import { slide as Menu } from "react-burger-menu"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelopeOpen, faHome, faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeOpen, faHome, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
  
 
 
