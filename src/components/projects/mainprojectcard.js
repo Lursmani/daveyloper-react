@@ -25,7 +25,7 @@ function MainProjectCard(props) {
                 <img src={props.image} alt={props.imageDescription} className="main-project-img" />
                 <div className={buttonDivClass}>
                 <a href={props.destination} className={buttonClass}>
-                    <p className="main-project-text" >{props.linkText}</p>
+                        {props.linkText}
                 </a>
                 </div>
 

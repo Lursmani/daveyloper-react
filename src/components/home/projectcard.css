@@ -26,7 +26,7 @@
   z-index: 3;
   align-self: center;
   display: grid;
-  border: 2px solid var(--highlight-main);
+  border: 0.15rem solid var(--highlight-main);
   box-shadow: 1px 1px 3px black;
   transition: 0.5s ease;
   padding: 0.2rem 0.2rem;
@@ -39,7 +39,7 @@
   z-index: 3;
   align-self: center;
   display: grid;
-  border: 2px solid var(--highlight-main);
+  border: 0.15rem solid var(--highlight-main);
   transition: 0.5s ease;
   padding: 0.2rem 0.2rem;
   border-radius: 2px;
@@ -58,12 +58,11 @@
   text-decoration: none;
   color: white;
   transition: 0.4s ease;
-  padding: 0.2rem 0.2rem;
+  padding: 0.25rem 0.30rem;
   display: grid;
   height: 100%;
   width: 100%;
   margin: 0;
-
 }
 .link-button-hover {
   justify-self: center;
@@ -76,7 +75,7 @@
   text-decoration: none;
   color: white;
   transition: 0.4s ease;
-  padding: 0.2rem 0.2rem;
+  padding: 0.22rem 0.26rem;
   display: grid;
   height: 100%;
   width: 100%;
