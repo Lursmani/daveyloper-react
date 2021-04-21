@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect, useRef} from "react"
 import "./carousel.css"
 
 
@@ -7,8 +7,16 @@ import "./carousel.css"
 function Carousel(props) {
     const {children} = props
     const [index, setIndex] = useState(0)
+    const [array, setArray] = useState([])
     const [length, setLength] = useState(children.length)
     const mobile = window.innerWidth > 768 ? "false" : "true"
+
+    
+
+
+
+    
+    // setting up breakpoints for easy responsiveness
     function breakpoints() {
         let x
         if (window.innerWidth <= 480) { return x === "mobile" } else 
@@ -16,16 +24,10 @@ function Carousel(props) {
         if (window.innerWidth > 768) {return x === "desktop"}
         return x
     }
-    const breakpoint = breakpoints()
-    const itemWidth = () => {
-        let x = props.show
-        let width = 100 / x
-        return width
-    }
-
 
     useEffect(() => {
         setLength(children.length)
+        setArray(React.Children.toArray(children))
     }, [children])
 
 
@@ -45,6 +47,11 @@ function Carousel(props) {
         // sets the index to be the previous if you are further than first slide
     }
 
+
+
+    
+
+
   
 
     return (
@@ -59,16 +66,16 @@ function Carousel(props) {
                { index > 0 && <button className="left-arrow" onClick={previous}>
                 &lt;
                 </button> }
-                <div className="carousel-content-wrapper">
+                <div className="carousel-content-wrapper" >
                { index < children.length - props.show &&    <button className="right-arrow" onClick={next}>
                     &gt;
                 </button>}
                 {/* the sliding is done by the translateX below. it translates by (100% of the slides * the index of the slide) from the starting position.  */}
-                    <div className="carousel-content"
+                    <div className="carousel-content"  
                     style={{transform: mobile === "false" && `translateX(-${index * 100 }%)`,
                             width: mobile === "false" && `${100 / props.show}%`}}
                     >
-                        { children}
+                        {children}
                     </div>
                 </div>
             </div>
