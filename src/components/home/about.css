@@ -216,6 +216,7 @@
   margin: 0;
   padding: 0;
   align-self: center;
+  color: var(--secondary-light)
 }
 .language-card-text {
   font-size: 1.4em;
