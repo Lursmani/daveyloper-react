@@ -5,11 +5,11 @@ import Fade from 'react-reveal/Fade'
 import "./about.css"
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faReact, faHtml5, faCss3Alt, faSass, faBootstrap, faJsSquare} from "@fortawesome/free-brands-svg-icons"
+import {faReact, faHtml5, faCss3Alt, faSass, faBootstrap, faJsSquare, faVuejs} from "@fortawesome/free-brands-svg-icons"
 import { Icon, } from '@iconify/react';
 import reduxIcon from '@iconify-icons/simple-icons/redux';
 import jqueryIcon from '@iconify-icons/cib/jquery';
-
+import nextjsIcon from '@iconify/icons-file-icons/nextjs';
 
 
 
@@ -73,6 +73,18 @@ function Skills() {
                             text="React"
                             />
                     </li>
+                     <li className="languages-list-item">
+                         <LanguageCard
+                         title = {<Icon  icon={nextjsIcon} />}
+                          text = "Next.js"
+                         />
+                     </li>
+                     <li className="languages-list-item">
+                         <LanguageCard
+                         title = {<FontAwesomeIcon  icon={faVuejs} />}
+                          text = "Vue.Js"
+                         />
+                     </li>
                     <li className="languages-list-item">  
                             <LanguageCard
                             title = {<FontAwesomeIcon icon={faJsSquare} />}
@@ -120,6 +132,7 @@ function Skills() {
                           text = "jQuery"
                          />
                      </li>
+                     
                      </ul>
                      </Fade>
                     
