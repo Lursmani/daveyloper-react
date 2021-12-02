@@ -11,7 +11,7 @@ function Header() {
    
     return(
         
-        <div className="nav-container">
+        <header className="nav-container">
             
             <div id="logo-div">
                 <h1 id="logo-text"><a id="logo-link" href="/"><FontAwesomeIcon icon={faCode} /> DaveyLoper</a></h1>
@@ -21,7 +21,7 @@ function Header() {
                 <Linkie to="/projects" text="Projects" />
                 <Linkie to="/contact" text="Contact" />
             </ul>
-        </div>
+        </header>
         
     )
     }

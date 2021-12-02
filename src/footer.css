@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   grid-row: 5/6;
-  font-style: "Klara" sans-serif;
+  font-style: "Karla" sans-serif;
 }
 #footer-name {
   display: grid;
@@ -51,7 +51,5 @@
   #footer-name {
     margin: 0;
   }
-  .contact-icon {
 
-  }
 }
