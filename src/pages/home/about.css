@@ -4,7 +4,7 @@
   font-family: "Klara", sans-serif;
   background: #2b7a78;
   background-color: #000000;
-  background-image: url("../mainbg.svg");
+  background-image: url("../../components/mainbg.svg");
   background-attachment: fixed;
   background-size: cover;
 }

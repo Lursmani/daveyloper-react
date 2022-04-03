@@ -5,9 +5,9 @@ import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Header from "./Nav"
 import Footer from "./Footer"
 import Hamburger from "./components/hamburger/hamburger"
-const Contact = React.lazy(() => import ("./components/contact/Contact") )
-const Projects = React.lazy (() => import ("./components/projects/Projects") )
-const Home = React.lazy(() => import  ("./components/home/home"));
+const Contact = React.lazy(() => import ("./pages/contact/Contact") )
+const Projects = React.lazy (() => import ("./pages/projects/Projects") )
+const Home = React.lazy(() => import  ("./pages/home/home"));
 const QuoteGenerator = React.lazy(() => import ("./components/works/quote-generator/quote-generator"))
 const MarkdownPreviewer = React.lazy(() => import ("./components/works/markdownPreviewer/markdownpreviewer"))
 const DrumPad = React.lazy(() => import ("./components/works/drumPad/drumPad"))
