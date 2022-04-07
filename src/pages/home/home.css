@@ -1,5 +1,4 @@
-
-:root{
+:root {
   --main-1: #040404;
   --main-2: #19171a;
   --main-3: #252525;
@@ -10,10 +9,8 @@
   --highlight-main2: #e9322e;
   --highlight-2: #ceafae;
   --highlight-3: #464898;
-  --highlight-4: #daa522; 
-
+  --highlight-4: #daa522;
 }
-
 
 .home-container {
   /* bgjar.com 
@@ -25,7 +22,7 @@
   background-attachment: fixed;
   background-size: cover;
 }
-  .banner-container {
+.banner-container {
   display: grid;
   height: 90vh;
   width: 100%;
@@ -119,7 +116,13 @@
 #scroll-title {
   justify-self: center;
   align-self: center;
-  padding: 1.5em 1em;
+  padding: 1.5em 1em 0 1em;
+}
+#scroll-subtitle {
+  justify-self: center;
+  align-self: center;
+  padding: 0em 1em;
+  
 }
 
 .scroll-container {
@@ -185,14 +188,12 @@
   height: 100%;
   margin: 0;
   padding: 0;
-
 }
 .end-links:hover {
   transform: translateY(-6px) translateX(-6px);
   transition: 0.5s ease;
   background: var(--highlight-main);
 }
-
 
 @media only screen and (max-width: 768px) {
   .scroll-container {

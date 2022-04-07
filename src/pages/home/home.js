@@ -62,6 +62,7 @@ function Home() {
       <Flip top>
         <div id="scroll-title-div">
           <h2 id="scroll-title">Check out some of my latest projects below:</h2>
+          <h4 id="scroll-subtitle"><i>Disclaimer: My latest projects are covered by an NDA, therefore I can not display them publicly.</i> </h4>
         </div>
       </Flip>
 
